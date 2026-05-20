@@ -77,38 +77,6 @@ Developer focused on software for technical and engineering workflows — struct
 
 ---
 
-## GitHub stats
-
-<div align="center">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=rafaelmmayer&theme=github" />
-
-<br/>
-
-<img height="160" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=rafaelmmayer&theme=github" />
-<img height="160" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=rafaelmmayer&theme=github&utcOffset=-3" />
-
-<br/>
-
-<img height="160" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=rafaelmmayer&theme=github" />
-<img height="160" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=rafaelmmayer&theme=github" />
-
-<br/>
-
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=rafaelmmayer&hide_border=true&area=true&color=555555&line=4F94CD&point=4F94CD)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
-<br/>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rafaelmmayer/rafaelmmayer/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rafaelmmayer/rafaelmmayer/output/snake.svg" />
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/rafaelmmayer/rafaelmmayer/output/snake.svg" />
-</picture>
-
-</div>
-
----
-
 ## Infrastructure & homelab
 
 Self-hosted infrastructure where I experiment with deployment workflows and operational reliability:
