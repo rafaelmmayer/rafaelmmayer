@@ -9,7 +9,7 @@ Brazil 🇧🇷 &nbsp;·&nbsp; Engineering × Automation × Software Architectur
 <br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/rafaelmmayer)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:rafael.mayer@optype.com.br)
+[![Contact](https://img.shields.io/badge/Contact-via_LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/rafaelmmayer)
 
 </div>
 
@@ -111,6 +111,7 @@ Self-hosted infrastructure where I experiment with deployment workflows and oper
 - Linux servers, networking, domains and TLS
 - Docker, Docker Compose and containerized services
 - Traefik / NGINX reverse proxies
+- Open source tools, self-hosting and infrastructure experimentation
 - AWS, S3 and S3-compatible object storage
 - Backups, disaster recovery and operational reliability
 - CI/CD, deployment automation, logs and monitoring
