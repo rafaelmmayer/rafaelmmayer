@@ -38,6 +38,8 @@ Most of my work lives in private/internal repositories, but it usually involves 
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+  <img src="https://img.shields.io/badge/NGINX-009639?style=for-the-badge&logo=nginx&logoColor=white" />
 </p>
 
 ## 🏗️ Domains I care about
@@ -55,6 +57,19 @@ Desktop Apps · Web Apps · CLIs · Workers · Data Pipelines
 - **Sourcea/Reeva** — collaboration and versioning platform designed for technical project folders and large binary assets
 - **Solidus** — structural masonry dimensioning workflows with auditable runs and interactive reports
 - **Revit/AlvMais ecosystem** — Revit add-ins, BIM automation, desktop tooling and engineering integrations
+
+## 🧪 Infrastructure & homelab
+
+I also maintain a personal homelab where I experiment with infrastructure, self-hosting and deployment workflows.
+
+Areas I actively work with:
+
+- Linux servers, networking, domains and TLS
+- Docker, Docker Compose and containerized services
+- Reverse proxies and self-hosted applications
+- Backups, disaster recovery and operational reliability
+- Object storage and S3-compatible storage
+- CI/CD, deployment automation, logs and monitoring
 
 ## 💡 Engineering principles
 
