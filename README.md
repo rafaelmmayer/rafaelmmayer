@@ -81,12 +81,17 @@ Developer focused on software for technical and engineering workflows — struct
 
 <div align="center">
 
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=rafaelmmayer&show_icons=true&hide_border=true&theme=default&count_private=true&include_all_commits=true" />
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rafaelmmayer&layout=compact&hide_border=true&theme=default&langs_count=6" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=rafaelmmayer&theme=github" />
 
 <br/>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=rafaelmmayer&theme=github" />
+<img height="160" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=rafaelmmayer&theme=github" />
+<img height="160" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=rafaelmmayer&theme=github&utcOffset=-3" />
+
+<br/>
+
+<img height="160" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=rafaelmmayer&theme=github" />
+<img height="160" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=rafaelmmayer&theme=github" />
 
 <br/>
 
