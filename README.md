@@ -39,7 +39,10 @@ Most of my work lives in private/internal repositories, but it usually involves 
   <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+  <img src="https://img.shields.io/badge/Traefik-24A1C1?style=for-the-badge&logo=traefikproxy&logoColor=white" />
   <img src="https://img.shields.io/badge/NGINX-009639?style=for-the-badge&logo=nginx&logoColor=white" />
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" />
+  <img src="https://img.shields.io/badge/S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white" />
 </p>
 
 ## 🏗️ Domains I care about
@@ -49,6 +52,8 @@ Structural Engineering · BIM · Revit API · Dynamo · TQS
 Technical Collaboration · Versioning · Large Binary Files
 Clean Architecture · DDD · Automation · Developer Experience
 Desktop Apps · Web Apps · CLIs · Workers · Data Pipelines
+Infrastructure · Homelab · Self-hosting · Open Source
+AWS · S3/Object Storage · Linux · Docker · Traefik
 ```
 
 ## 🚀 Recent focus
@@ -66,9 +71,10 @@ Areas I actively work with:
 
 - Linux servers, networking, domains and TLS
 - Docker, Docker Compose and containerized services
-- Reverse proxies and self-hosted applications
+- Traefik/NGINX reverse proxies and self-hosted applications
+- Open source tools and self-hosted infrastructure
+- AWS, S3 and S3-compatible object storage
 - Backups, disaster recovery and operational reliability
-- Object storage and S3-compatible storage
 - CI/CD, deployment automation, logs and monitoring
 
 ## 💡 Engineering principles
