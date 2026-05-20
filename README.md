@@ -2,93 +2,135 @@
 
 # Rafael Mayer
 
-### Software engineer building tools for structural engineering, BIM and technical collaboration
+**Software engineer building tools for structural engineering, BIM and technical collaboration**
 
-Based in Brazil 🇧🇷 · Building at the intersection of **engineering**, **automation** and **software architecture**
+Brazil 🇧🇷 &nbsp;·&nbsp; Engineering × Automation × Software Architecture
+
+<br/>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/rafaelmmayer)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:rafael.mayer@optype.com.br)
 
 </div>
 
 ---
 
-## 👋 About me
+## About
 
-I'm a developer focused on creating software for technical and engineering workflows — especially structural engineering, BIM, automation, desktop tools and collaboration platforms for large technical files.
+Developer focused on software for technical and engineering workflows — structural engineering, BIM, automation, desktop tools and collaboration platforms for large technical files. Most of my work lives in private/internal repositories, but it usually involves turning complex engineering processes into reliable, maintainable and user-friendly products.
 
-Most of my work lives in private/internal repositories, but it usually involves turning complex engineering processes into reliable, maintainable and user-friendly products.
+---
 
-## 🧩 What I build
+## What I build
 
-- **Structural engineering platforms** for studies, quantities, reports and technical decision-making
-- **BIM/Revit tools**: add-ins, ribbons, desktop apps, Dynamo integrations and automation pipelines
-- **Collaboration/versioning systems** for binary-heavy projects such as CAD, BIM, TQS, PDFs and generated artifacts
-- **Internal productivity tools**: Asana automations, task workflows, dashboards, workers and CLIs
-- **Desktop + web applications** combining modern frontend UX with robust backend/domain logic
+| Area | Description |
+|---|---|
+| **Structural platforms** | Studies, quantities, reports and technical decision-making |
+| **BIM / Revit tools** | Add-ins, ribbons, desktop apps, Dynamo integrations, automation pipelines |
+| **Collaboration systems** | Versioning for binary-heavy projects: CAD, BIM, TQS, PDFs, generated artifacts |
+| **Productivity tools** | Asana automations, task workflows, dashboards, workers and CLIs |
+| **Desktop + web apps** | Modern frontend UX with robust backend / domain logic |
 
-## 🛠️ Tech stack
+---
 
-<p>
-  <img src="https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
-  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" />
-  <img src="https://img.shields.io/badge/ASP.NET_Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
-  <img src="https://img.shields.io/badge/Vue-42B883?style=for-the-badge&logo=vuedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
-  <img src="https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-  <img src="https://img.shields.io/badge/Traefik-24A1C1?style=for-the-badge&logo=traefikproxy&logoColor=white" />
-  <img src="https://img.shields.io/badge/NGINX-009639?style=for-the-badge&logo=nginx&logoColor=white" />
-  <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" />
-  <img src="https://img.shields.io/badge/S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white" />
-</p>
+## Tech stack
 
-## 🏗️ Domains I care about
+**Languages**
 
-```text
-Structural Engineering · BIM · Revit API · Dynamo · TQS
-Technical Collaboration · Versioning · Large Binary Files
-Clean Architecture · DDD · Automation · Developer Experience
-Desktop Apps · Web Apps · CLIs · Workers · Data Pipelines
-Infrastructure · Homelab · Self-hosting · Open Source
-AWS · S3/Object Storage · Linux · Docker · Traefik
-```
+![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 
-## 🚀 Recent focus
+**Frameworks & runtimes**
 
-- **Optype** — platform for automating structural studies, model processing, viewers and technical workflows
-- **Sourcea/Reeva** — collaboration and versioning platform designed for technical project folders and large binary assets
-- **Solidus** — structural masonry dimensioning workflows with auditable runs and interactive reports
-- **Revit/AlvMais ecosystem** — Revit add-ins, BIM automation, desktop tooling and engineering integrations
+![.NET](https://img.shields.io/badge/.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![Vue](https://img.shields.io/badge/Vue-42B883?style=flat-square&logo=vuedotjs&logoColor=white)
+![Electron](https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white)
 
-## 🧪 Infrastructure & homelab
+**Data**
 
-I also maintain a personal homelab where I experiment with infrastructure, self-hosting and deployment workflows.
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![S3](https://img.shields.io/badge/S3-569A31?style=flat-square&logo=amazons3&logoColor=white)
 
-Areas I actively work with:
+**Infrastructure**
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
+![Traefik](https://img.shields.io/badge/Traefik-24A1C1?style=flat-square&logo=traefikproxy&logoColor=white)
+![NGINX](https://img.shields.io/badge/NGINX-009639?style=flat-square&logo=nginx&logoColor=white)
+
+---
+
+## Recent focus
+
+**Optype** — Platform for automating structural studies, model processing, viewers and technical workflows
+
+**Sourcea / Reeva** — Collaboration and versioning platform designed for technical project folders and large binary assets
+
+**Solidus** — Structural masonry dimensioning workflows with auditable runs and interactive reports
+
+**Revit / AlvMais ecosystem** — Revit add-ins, BIM automation, desktop tooling and engineering integrations
+
+---
+
+## GitHub stats
+
+<div align="center">
+
+<img height="160" src="https://github-readme-stats.vercel.app/api?username=rafaelmmayer&show_icons=true&hide_border=true&theme=default&count_private=true&include_all_commits=true" />
+<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rafaelmmayer&layout=compact&hide_border=true&theme=default&langs_count=6" />
+
+<br/>
+
+[![GitHub Streak](https://streak-stats.demolab.com?user=rafaelmmayer&hide_border=true&date_format=j%20M%5B%20Y%5D)](https://git.io/streak-stats)
+
+<br/>
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=rafaelmmayer&hide_border=true&area=true&color=555555&line=4F94CD&point=4F94CD)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rafaelmmayer/rafaelmmayer/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rafaelmmayer/rafaelmmayer/output/snake.svg" />
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/rafaelmmayer/rafaelmmayer/output/snake.svg" />
+</picture>
+
+</div>
+
+---
+
+## Infrastructure & homelab
+
+Self-hosted infrastructure where I experiment with deployment workflows and operational reliability:
 
 - Linux servers, networking, domains and TLS
 - Docker, Docker Compose and containerized services
-- Traefik/NGINX reverse proxies and self-hosted applications
-- Open source tools and self-hosted infrastructure
+- Traefik / NGINX reverse proxies
 - AWS, S3 and S3-compatible object storage
 - Backups, disaster recovery and operational reliability
 - CI/CD, deployment automation, logs and monitoring
 
-## 💡 Engineering principles
+---
 
-- Correctness and data safety first
-- Reproducible, auditable technical workflows
-- Explicit domain rules over hidden shortcuts
-- Maintainable architecture over one-off fixes
-- UX that respects how engineers actually work
+## Engineering principles
+
+```
+Correctness and data safety first
+Reproducible, auditable technical workflows
+Explicit domain rules over hidden shortcuts
+Maintainable architecture over one-off fixes
+UX that respects how engineers actually work
+```
 
 ---
 
 <div align="center">
 
-**Building software that helps engineering teams move faster without losing technical rigor.**
+*Building software that helps engineering teams move faster without losing technical rigor.*
 
 </div>
