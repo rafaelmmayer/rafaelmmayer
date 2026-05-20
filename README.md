@@ -86,7 +86,7 @@ Developer focused on software for technical and engineering workflows — struct
 
 <br/>
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=rafaelmmayer&hide_border=true&date_format=j%20M%5B%20Y%5D)](https://git.io/streak-stats)
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=rafaelmmayer&theme=github" />
 
 <br/>
 
