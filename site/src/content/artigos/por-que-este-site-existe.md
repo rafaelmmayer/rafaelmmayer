@@ -19,11 +19,11 @@ Um espaço pra expor ideias, pensamentos e o que venho construindo.
 
 Parte do motivo de escrever aqui é egoísta, e tudo bem assumir isso: é um lugar onde eu posso falar sem precisar que ninguém ouça. Escrever ajuda a organizar o que tá solto na cabeça, e ter o texto fora de mim deixa o pensamento mais claro do que se ele continuasse só rodando ali dentro.
 
-Se alguém ler e tirar alguma coisa útil, melhor ainda. Mas o exercício de escrever já vale por si só.
+Se alguém ler e tirar alguma coisa útil, ótimo. Mas o exercício de escrever já vale por si só.
 
 ## Pra ajudar quem possa se aproveitar
 
-Ao mesmo tempo, depois de uns anos construindo software — em produtos, ferramentas internas, automações, integrações, infraestrutura — sinto que acumulei umas tantas decisões, erros e aprendizados que poderiam ajudar outras pessoas no caminho.
+Ao mesmo tempo, depois de uns anos construindo software — produtos, ferramentas internas, infraestrutura — sinto que acumulei umas tantas decisões, erros e aprendizados que poderiam ajudar outras pessoas no caminho.
 
 Quero usar este espaço pra falar sobre coisas como:
 
@@ -39,7 +39,7 @@ Coisa de quem ainda está aprendendo, registrada em voz alta.
 
 Apesar do meu trabalho ser software, eu não sou só software. Aqui também devem aparecer coisas mais pessoais — política, visão de mundo, opiniões sobre como as coisas funcionam (ou deixam de funcionar). Não faz sentido pra mim manter um site "meu" e ao mesmo tempo fingir que sou só engenheiro.
 
-Se você veio só pelo lado técnico, fique à vontade pra ignorar o resto. E vice-versa.
+Se você veio só pelo lado técnico, fique à vontade pra ignorar o resto.
 
 ## Tentar ser verdadeiro
 
@@ -49,7 +49,7 @@ Não dá pra consertar isso de fora. Mas dá pra pelo menos tentar manter este c
 
 ## Uma forma de retribuir o open source
 
-Praticamente tudo que eu construí na vida foi em cima de software livre. Linguagens, frameworks, ferramentas, sistemas operacionais, bibliotecas — quase nada disso seria possível sem gente que escolheu publicar o próprio trabalho sem cobrar nada por isso.
+Praticamente tudo que eu construí na vida foi em cima de software livre — linguagens, ferramentas, sistemas operacionais. Quase nada disso seria possível sem gente que escolheu publicar o próprio trabalho sem cobrar nada por isso.
 
 Escrever em público devolve um pouco do que recebi — alguém escreveu sobre o que aprendeu, eu li, aprendi, agora é a minha vez.
 

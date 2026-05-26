@@ -54,6 +54,8 @@ Não dá pra consertar isso de fora. Mas dá pra tentar manter este canto sendo 
 
 **Quando bater dúvida sobre um trecho:** perguntar "isso é verdadeiro? ou estou maquiando pra alguém?".
 
+Autenticidade é o valor central. Acima de coerência editorial, acima de tom consistente, acima de qualquer padrão de escrita — o que importa é que o texto seja genuinamente do Rafael. Se soar como outra pessoa, está errado.
+
 ## Tom de voz
 
 - pessoal;
@@ -132,6 +134,8 @@ Quem é ácido não precisa avisar — o texto mostra.
 **Conclusão que recua** — terminar um argumento forte com *"mas claro que X também tem seu valor"* devolve o que acabou de tomar. Se o argumento está certo, confiar nele.
 
 **Listar o que não se é** — em vez de "este não é um portfolio comercial, é um caderno pessoal", basta escrever como caderno pessoal.
+
+**Assíndeto em excesso** — listas curtas separadas por vírgula (*"Ajuda, acelera, amplia repertório"*, *"Uso pra programar, revisar texto, explorar ideias, comparar caminhos..."*). Uma vez cria ritmo; repetido no mesmo texto vira tique de escrita gerada por IA. Preferir prosa corrida ou cortar o que é óbvio.
 
 ## Manutenção
 
