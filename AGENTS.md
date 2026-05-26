@@ -1,90 +1,141 @@
 # AGENTS.md
 
-## Requisitos antes de concluir
+Para personalidade, voz e posicionamento: ver `SOUL.md`.
 
-- Antes de considerar uma tarefa concluída, rode a menor validação relevante para os arquivos alterados.
-- Antes de cada commit, garanta que o build ainda passa:
+---
 
-```bash
-bun run build
-```
+## Visão geral
 
-- Para mudanças amplas, rode também:
-
-```bash
-bun run check
-```
-
-## Visão geral do projeto
-
-Este repositório é o site pessoal do Rafael Mayer — apresentação, projetos e artigos sobre engenharia, software, infraestrutura e o que mais aparecer pelo caminho. Não é uma landing page comercial nem um portfolio com tom de campanha; é um caderno público.
-
-A direção editorial e de tom está em `.docs/portfolio-direction.md` e `.docs/site-spec.md`. Leia antes de mexer em texto ou estrutura.
+Site pessoal do Rafael Mayer — apresentação, projetos e artigos sobre engenharia, software, infraestrutura e o que mais aparecer pelo caminho.
 
 ## Prioridades
 
-1. Honestidade de tom acima de tudo. Sem marketing, sem buzzwords, sem CTA agressivo.
+1. Honestidade de tom. Ler `SOUL.md` antes de mexer em qualquer texto.
 2. Conteúdo simples, editorial e direto.
-3. Manutenibilidade do site (Astro + Markdown) acima de qualquer truque visual.
-4. Performance e acessibilidade. Site estático, leve, sem JS desnecessário.
-
-Quando houver tradeoff, prefira a versão mais simples e mais pessoal.
-
-## Tom de voz
-
-- Pessoal, simples, honesto, direto.
-- Técnico quando necessário, sem pose de autoridade.
-- Evitar "cases de sucesso", "soluções inovadoras", "ajude empresas a", "agende uma conversa", autoridade declarada.
-- Evitar o padrão "não é X, não é Y, é Z" (tricolon de negação) — soa gerado por IA.
-- Evitar auto-declarações performáticas ("vou ser transparente", "não estou aqui pra agradar").
-- Preferir afirmar direto o que é, em vez de listar o que não é.
-- Evitar buzzwords e linguagem inflada.
+3. Manutenibilidade (Astro + Markdown) acima de qualquer truque visual.
+4. Site estático, leve, sem JS desnecessário.
 
 ## Estrutura do repositório
 
-- `site/` — projeto Astro com Tailwind. Tudo do site mora aqui.
-- `site/src/pages/` — rotas (`index.astro`, `projetos/`, `artigos/`).
-- `site/src/content/artigos/` — artigos em Markdown.
-- `site/src/content/projetos/` — projetos em Markdown.
-- `site/src/layouts/BaseLayout.astro` — header, nav, footer, fontes.
-- `site/src/styles/global.css` — estilos globais. Variáveis de cor, tipografia, layout.
-- `site/src/content.config.ts` — schemas das coleções (`artigos`, `projetos`).
-- `.docs/` — direção editorial, brief e especificação do site. Documentação durável.
-- `README.md` (raiz) — README do perfil do GitHub, em pt-BR.
-- `Profile.md` — currículo exportado do LinkedIn, referência interna.
+```
+site/src/pages/          rotas (index.astro, projetos/, artigos/)
+site/src/content/artigos/    artigos em Markdown
+site/src/content/projetos/   projetos em Markdown
+site/src/layouts/BaseLayout.astro
+site/src/styles/global.css
+site/src/content.config.ts   schemas das coleções
+README.md                    perfil GitHub, pt-BR
+SOUL.md                      personalidade e voz
+AGENTS.md                    este arquivo
+```
+
+## Rotas
+
+```
+/                    home
+/projetos/           lista de projetos
+/projetos/[slug]/    página individual
+/artigos/            lista de artigos
+/artigos/[slug]/     página individual
+```
+
+## Seções da home
+
+| Seção | Conteúdo |
+|---|---|
+| **Hero** | Avatar + nome + cargo + linha sobre o que constrói + caráter pessoal do site |
+| **Sobre** | Optype (papel + link), RM (AlvMais/Gear), eng/software/infra, open source/homelab, não é só tecnologia |
+| **Agora** | O que está fazendo agora. Stamp `atualizado em <mês> <ano>`. Atualizar a cada 1–2 meses. |
+| **Projetos** | Chamada curta + link. Sem listar nomes na home. |
+| **Artigos** | Lista densa dos últimos 3–4. Sem grid de cards. |
+| **Contato** | Frase única com links inline. Sem pílulas de CTA. |
+
+## Decisões visuais firmadas
+
+- **"Artigos"** é o termo (não "escritos", "notas", "blog").
+- BIM não aparece no posicionamento.
+- Sem mural de badges, sem lista de tecnologias na home.
+- Sem grid de cards estilo "features".
+- Coluna única, ~1000px, laranja como acento raro.
+- Tipografia: Newsreader (títulos/prose) · Inter (UI) · JetBrains Mono (meta/datas).
+
+## Contatos e referências
+
+- E-mail: mayer.rafa@outlook.com
+- LinkedIn: https://www.linkedin.com/in/rafaelmmayer/
+- GitHub: https://github.com/rafaelmmayer/rafaelmmayer
+- Idioma: português. Inglês no futuro, sem prioridade.
+
+**Projetos candidatos** (entram quando ficarem prontos):
+Optype · Sourcea/Reeva · Solidus · AlvMais · Gear · EngTools
+
+## Próximo passo em aberto
+
+- Substituir `public/avatar-placeholder.svg` pelo avatar final.
+- Definir domínio e atualizar `site/astro.config.mjs`.
+- Configurar deploy automático.
 
 ## Comandos
 
-- Use `bun` para tudo. `bun install`, `bun run <script>`.
-- Scripts da raiz (delegam pro `site/`):
-  - `bun run dev` — Astro dev server
-  - `bun run build` — build estático
-  - `bun run preview` — preview do build
-  - `bun run check` — `astro check` (typecheck e validação de conteúdo)
-  - `bun run sync` — `astro sync` (regenera tipos de coleções)
+```bash
+bun run dev       # dev server
+bun run build     # build estático
+bun run preview   # preview do build
+bun run check     # typecheck + validação
+bun run sync      # regenera tipos de coleções
+```
 
 ## Conteúdo
 
-- Artigos novos: criar `site/src/content/artigos/<slug>.md` com o frontmatter exigido pelo schema (`title`, `description`, `date`, `tags`, `published`, opcional `type`).
-- Projetos novos: criar `site/src/content/projetos/<slug>.md` com `title`, `description`, opcional `status`, `date`, `tags`, `published`.
-- Use `published: false` enquanto o conteúdo não está pronto.
-- Datas em frontmatter: ISO (`YYYY-MM-DD`).
-- Não duplicar metadados no corpo do markdown — o frontmatter cuida disso.
+**Novo artigo:** `site/src/content/artigos/<slug>.md`
+
+```yaml
+---
+title: Título
+description: "Resumo curto."
+date: 2026-05-26
+type: Artigo
+tags: [tag1, tag2]
+published: false
+---
+```
+
+**Novo projeto:** `site/src/content/projetos/<slug>.md`
+
+```yaml
+---
+title: Nome
+description: "Resumo curto."
+status: em andamento
+date: 2026-05-26
+tags: [tag1]
+published: false
+---
+```
+
+Usar `published: false` até o conteúdo estar pronto. Datas em ISO (`YYYY-MM-DD`).
 
 ## Commits
 
-Use Conventional Commits. Exemplos:
+Conventional Commits:
 
 - `feat(home): adiciona seção "agora"`
-- `fix(artigos): corrige link quebrado em por-que-este-site-existe`
+- `fix(artigos): corrige link quebrado`
+- `content(artigos): publica artigo sobre linkedin`
+- `style(prose): ajusta largura da coluna`
 - `chore(deps): atualiza astro para 6.x`
-- `content(artigos): publica primeiro artigo`
-- `style(prose): ajusta largura da coluna de leitura`
+
+## Antes de concluir
+
+```bash
+bun run build   # sempre
+bun run check   # para mudanças amplas
+```
 
 ## O que evitar
 
-- Não adicionar fonte, biblioteca ou dependência sem necessidade clara.
+- Não adicionar dependência sem necessidade clara.
 - Não criar componentes Astro novos quando uma seção em `index.astro` resolve.
-- Não mexer no tom dos textos sem ler `.docs/portfolio-direction.md`.
-- Não introduzir JS no client a menos que seja realmente necessário.
-- Não publicar conteúdo no lugar do Rafael — sempre confirmar antes de marcar `published: true` em rascunhos.
+- Não mexer em texto ou tom sem ler `SOUL.md`.
+- Não introduzir JS no client sem necessidade real.
+- Não marcar `published: true` em rascunhos sem confirmar com o Rafael.
