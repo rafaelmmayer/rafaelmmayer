@@ -26,11 +26,7 @@ Uma coisa que tem me incomodado bastante é a facilidade com que algumas pessoas
 
 Recentemente comecei a reparar em uma pessoa que postava muito sobre tecnologia. Eram vários assuntos diferentes, sempre com aquele tom seguro, frases bem encaixadas, vocabulário de quem parecia dominar tudo. Quanto mais eu via, mais os textos tinham cara de IA.
 
-Fui olhar o perfil. Estava lá: especialista.
-
-Desci um pouco mais e vi que a pessoa tinha começado na área de tecnologia há menos de três anos.
-
-Isso me pegou.
+Fui olhar o perfil. A pessoa tinha menos de três anos na área.
 
 Não porque alguém com três anos de experiência não possa escrever coisa boa. Pode. Tem gente muito boa com pouco tempo de mercado, assim como tem gente medíocre com vinte anos de carreira. Tempo sozinho não prova muita coisa.
 
