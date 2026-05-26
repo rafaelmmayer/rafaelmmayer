@@ -23,7 +23,7 @@ Se alguém ler e tirar alguma coisa útil, ótimo. Mas o exercício de escrever 
 
 ## Pra ajudar quem possa se aproveitar
 
-Ao mesmo tempo, depois de uns anos construindo software — produtos, ferramentas internas, infraestrutura — sinto que acumulei umas tantas decisões, erros e aprendizados que poderiam ajudar outras pessoas no caminho.
+Ao mesmo tempo, depois de uns anos construindo software (produtos, ferramentas internas, infraestrutura), sinto que acumulei umas tantas decisões, erros e aprendizados que poderiam ajudar outras pessoas no caminho.
 
 Quero usar este espaço pra falar sobre coisas como:
 
@@ -45,16 +45,16 @@ Se você veio só pelo lado técnico, fique à vontade pra ignorar o resto.
 
 Tenho a impressão de que cada vez se vê menos coisa verdadeira por aí. Quase tudo passa por algum filtro — algoritmo, engajamento, posicionamento, marketing. Opinião medida pra agradar quem precisa agradar, ou pra incomodar as pessoas certas. Texto que existe pra performar, não pra dizer.
 
-Não dá pra consertar isso de fora. Mas dá pra pelo menos tentar manter este canto aqui sendo verdadeiro — escrever o que de fato penso, mesmo quando for inconveniente ou impopular. Se eu estiver errado, melhor descobrir publicando do que guardar a ideia errada na cabeça. E se eu mudar de opinião depois, escrevo sobre isso também.
+Não dá pra consertar isso de fora. Mas dá pra pelo menos tentar manter este canto aqui sendo verdadeiro: escrever o que de fato penso, mesmo quando for inconveniente ou impopular. Se eu estiver errado, melhor descobrir publicando do que guardar a ideia errada na cabeça. E se eu mudar de opinião depois, escrevo sobre isso também.
 
 ## Uma forma de retribuir o open source
 
 Praticamente tudo que eu construí na vida foi em cima de software livre — linguagens, ferramentas, sistemas operacionais. Quase nada disso seria possível sem gente que escolheu publicar o próprio trabalho sem cobrar nada por isso.
 
-Escrever em público devolve um pouco do que recebi — alguém escreveu sobre o que aprendeu, eu li, aprendi, agora é a minha vez.
+Escrever em público devolve um pouco do que recebi. Alguém escreveu sobre o que aprendeu, eu li, aprendi, agora é a minha vez.
 
 ## E os projetos
 
-A aba de [projetos](/projetos/) vai ser preenchida ao longo do tempo. Algumas coisas que toquei estão sob NDA, outras precisam ser organizadas antes de fazer sentido aqui, outras são experimentos que nunca foram pra lugar nenhum — e tudo isso vai aparecendo conforme cada um fica pronto pra mostrar.
+A aba de [projetos](/projetos/) vai ser preenchida ao longo do tempo. Algumas coisas que toquei estão sob NDA, outras precisam ser organizadas antes de fazer sentido aqui, outras são experimentos que nunca foram pra lugar nenhum. Tudo isso vai aparecendo conforme cada um fica pronto pra mostrar.
 
 Por enquanto é isso. Bem-vindo.
