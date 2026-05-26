@@ -30,10 +30,10 @@ Quero usar este espaço pra falar sobre coisas como:
 - arquitetura de software e as decisões por trás dela
 - trends e hypes do ecossistema (e separar o que é sinal do que é ruído)
 - bastidores técnicos de projetos que toquei
-- automação, integrações e a fronteira entre software e engenharia
+- automação, integrações e onde software e engenharia se encontram
 - open source, homelab, self-hosting e infraestrutura
 
-Coisa de quem ainda está aprendendo, registrada em voz alta.
+Coisa de quem ainda está aprendendo, do jeito que vai saindo.
 
 ## Política, mundo, opinião
 
@@ -43,7 +43,7 @@ Se você veio só pelo lado técnico, fique à vontade pra ignorar o resto.
 
 ## Tentar ser verdadeiro
 
-Tenho a impressão de que cada vez se vê menos coisa verdadeira por aí. Quase tudo passa por algum filtro — algoritmo, engajamento, posicionamento, marketing. Opinião medida pra agradar quem precisa agradar, ou pra incomodar as pessoas certas. Texto que existe pra performar, não pra dizer.
+Tenho a impressão de que cada vez se vê menos coisa verdadeira por aí. Quase tudo passa por algum filtro — algoritmo, engajamento, posicionamento, marketing. Opinião medida pra agradar quem precisa agradar, ou pra incomodar as pessoas certas. Texto que existe pra aparecer, não pra dizer alguma coisa.
 
 Não dá pra consertar isso de fora. Mas dá pra pelo menos tentar manter este canto aqui sendo verdadeiro: escrever o que de fato penso, mesmo quando for inconveniente ou impopular. Se eu estiver errado, melhor descobrir publicando do que guardar a ideia errada na cabeça. E se eu mudar de opinião depois, escrevo sobre isso também.
 
