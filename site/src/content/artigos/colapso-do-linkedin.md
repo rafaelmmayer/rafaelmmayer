@@ -56,7 +56,7 @@ Aí a gente chega nesse cenário estranho: pessoas sem muita bagagem publicando 
 
 No [primeiro artigo](/artigos/por-que-este-site-existe/), escrevi que cada vez se vê menos coisa verdadeira por aí. O LinkedIn talvez seja um dos exemplos mais claros disso.
 
-Tudo ali parece empurrar a pessoa pra virar personagem de si mesma. Quem escreve precisa parecer produtivo, resiliente, estratégico, provocador, humilde, visionário e grato (de preferência no mesmo post). No fim, muita gente começa a escrever para sustentar uma imagem, não para dizer alguma coisa.
+Tudo ali empurra a pessoa a parecer maior do que é. Quem escreve precisa parecer produtivo, resiliente, estratégico, provocador, humilde, visionário e grato (de preferência no mesmo post). No fim, muita gente começa a escrever para sustentar uma imagem, não para dizer alguma coisa.
 
 A IA encaixa perfeitamente nesse ambiente porque ela é muito boa em produzir texto socialmente aceitável. Sabe imitar entusiasmo e transformar qualquer observação simples em lição de carreira.
 
