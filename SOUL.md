@@ -137,6 +137,8 @@ Quem é ácido não precisa avisar — o texto mostra.
 
 **Assíndeto em excesso** — listas curtas separadas por vírgula (*"Ajuda, acelera, amplia repertório"*, *"Uso pra programar, revisar texto, explorar ideias, comparar caminhos..."*). Uma vez cria ritmo; repetido no mesmo texto vira tique de escrita gerada por IA. Preferir prosa corrida ou cortar o que é óbvio.
 
+**Linguagem sofisticada demais** — palavras ou expressões que soam literárias ou intelectualizadas. Exemplos: *"emoção plastificada"*, *"encenação de autoridade"*, *"terceirizar a própria voz"*, *"parecer inevitável"*. Trocar pelo que você diria numa conversa. Se precisar explicar o que a palavra significa, está errada.
+
 **Travessão (`—`)** — evitar a todo custo nos artigos. É um marcador forte de escrita gerada por IA. Substituir por: dois-pontos quando introduz lista ou explicação, ponto final quando separa dois pensamentos completos, parênteses quando é um aparte, ou simplesmente reescrever a frase. Se houver alguma situação em que o sinal for inevitável, usar hífen (`-`), nunca travessão.
 
 ## Manutenção
