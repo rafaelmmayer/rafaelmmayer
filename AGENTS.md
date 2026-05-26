@@ -71,7 +71,6 @@ Optype · Sourcea/Reeva · Solidus · AlvMais · Gear · EngTools
 
 ## Próximo passo em aberto
 
-- Substituir `public/avatar-placeholder.svg` pelo avatar final.
 - Definir domínio e atualizar `site/astro.config.mjs`.
 - Configurar deploy automático.
 
