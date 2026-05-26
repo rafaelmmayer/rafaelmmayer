@@ -1,0 +1,125 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const formatShort = (date: Date) =>
+  date.toLocaleDateString('pt-BR', { month: 'short', year: 'numeric' }).replace('.', '');
+
+const writings = (await getCollection('artigos', ({ data }) => data.published !== false))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 4);
+---
+
+<BaseLayout>
+  <main>
+    <section class="hero">
+      <div class="identity">
+        <img class="avatar" src="/avatar-placeholder.svg" alt="" aria-hidden="true" />
+        <div class="who">
+          <span class="name">Rafael Mayer</span>
+          <span class="role">engenheiro de software</span>
+        </div>
+      </div>
+
+      <h1>Oi, eu sou o Rafael.</h1>
+      <p class="lead">
+        Gosto de construir ferramentas para problemas técnicos — na fronteira entre engenharia,
+        software e infraestrutura.
+      </p>
+      <p class="lead">
+        Aqui é meu canto pessoal na internet pra escrever sobre isso e sobre o que mais me
+        passar pela cabeça.
+      </p>
+    </section>
+
+    <section class="section" id="sobre">
+      <p class="section-label">sobre</p>
+      <p>
+        Sou engenheiro de software e atuo como head de tecnologia no
+        <a href="https://optype.com.br" target="_blank" rel="noreferrer">Optype</a>, uma
+        plataforma para estudos estruturais que automatiza a geração de quantitativos e taxas a
+        partir do modelo arquitetônico.
+      </p>
+      <p>
+        Antes do Optype, trabalhei na RM como líder técnico dos softwares internos da empresa,
+        tocando projetos como AlvMais e Gear — ferramentas de engenharia, automações Revit e
+        sistemas que conectavam o trabalho técnico ao dia a dia das equipes.
+      </p>
+      <p>
+        Tenho interesse pelos pontos onde software encontra engenharia: modelos, cálculos,
+        arquivos técnicos e a colaboração entre equipes que precisam confiar no resultado. Fora
+        do trabalho, gosto bastante de open source, homelab e self-hosting — passo um bom tempo
+        mexendo em servidores, infraestrutura e ferramentas que rodam por aqui.
+      </p>
+      <p>
+        Este é um espaço pessoal, então não é só sobre tecnologia — também aparecem opiniões
+        sobre política, visão de mundo e o que mais me passar pela cabeça.
+      </p>
+    </section>
+
+    <section class="section">
+      <p class="section-label">agora</p>
+      <p>
+        Liderando a tecnologia do Optype — arquitetura da plataforma, decisões técnicas e
+        construção do produto junto com o time. No dia a dia isso vira backend .NET, frontend
+        Vue, um app desktop em Electron com integração TQS e bastante atenção aos detalhes de
+        domínio estrutural.
+      </p>
+      <p>
+        Fora do Optype, mexo em projetos pessoais, experimentos com infraestrutura no homelab
+        e escrevo sobre o que aprendo no meio do caminho.
+      </p>
+      <p class="now-stamp">atualizado em maio de 2026</p>
+    </section>
+
+    <section class="section" id="projetos">
+      <p class="section-label">projetos</p>
+      <p>
+        Coisas que desenvolvi ou ainda estou desenvolvendo — produtos, ferramentas internas,
+        automações e experimentos.
+      </p>
+      <p class="inline-links" style="margin-top:1.25rem">
+        <a href="/projetos/">ver projetos →</a>
+      </p>
+    </section>
+
+    <section class="section" id="artigos">
+      <p class="section-label">artigos</p>
+      <p>
+        Artigos técnicos, aprendizados de projeto e reflexões sobre engenharia, software e automação.
+      </p>
+
+      {writings.length > 0 ? (
+        <ul class="index-list">
+          {writings.map((post) => (
+            <li class="entry">
+              <span class="date">{formatShort(post.data.date)}</span>
+              <div class="body">
+                <h3><a href={`/artigos/${post.id}/`}>{post.data.title}</a></h3>
+                <p>{post.data.description}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <div class="note">Os primeiros textos ainda vão aparecer por aqui.</div>
+      )}
+
+      <p class="inline-links" style="margin-top:1.25rem">
+        <a href="/artigos/">ver tudo →</a>
+      </p>
+    </section>
+
+    <section class="section" id="contato">
+      <p class="section-label">contato</p>
+      <p>
+        Se quiser trocar ideia, é só me chamar por
+        <a href="mailto:mayer.rafa@outlook.com">e-mail</a>
+        <span class="sep">·</span>
+        <a href="https://www.linkedin.com/in/rafaelmmayer/" target="_blank" rel="noreferrer">linkedin</a>
+        <span class="sep">·</span>
+        <a href="https://github.com/rafaelmmayer/rafaelmmayer" target="_blank" rel="noreferrer">github</a>.
+      </p>
+    </section>
+  </main>
+</BaseLayout>

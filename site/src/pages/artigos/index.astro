@@ -1,0 +1,43 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const formatShort = (date: Date) =>
+  date.toLocaleDateString('pt-BR', { month: 'short', year: 'numeric' }).replace('.', '');
+
+const posts = (await getCollection('artigos', ({ data }) => data.published !== false))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<BaseLayout title="Artigos — Rafael Mayer" description="Artigos de Rafael Mayer sobre engenharia, software, automação e infraestrutura.">
+  <main>
+    <section class="page-head">
+      <p class="kicker">artigos</p>
+      <h1>Artigos e ideias.</h1>
+      <p>
+        Sobre engenharia, software, automação e o que aparecer pelo caminho.
+      </p>
+    </section>
+
+    <section>
+      {posts.length > 0 ? (
+        <ul class="index-list">
+          {posts.map((post) => (
+            <li class="entry">
+              <span class="date">{formatShort(post.data.date)}</span>
+              <div class="body">
+                <h3><a href={`/artigos/${post.id}/`}>{post.data.title}</a></h3>
+                <p>{post.data.description}</p>
+                {post.data.tags?.length ? (
+                  <p class="meta">{post.data.tags.join(' · ')}</p>
+                ) : null}
+              </div>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <div class="note">Nenhum artigo publicado ainda.</div>
+      )}
+    </section>
+  </main>
+</BaseLayout>

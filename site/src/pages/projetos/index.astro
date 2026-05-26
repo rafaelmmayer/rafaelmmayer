@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const projects = (await getCollection('projetos', ({ data }) => data.published !== false))
+  .sort((a, b) => (b.data.date?.getTime() ?? 0) - (a.data.date?.getTime() ?? 0));
+---
+
+<BaseLayout title="Projetos — Rafael Mayer" description="Projetos, ferramentas e experimentos de Rafael Mayer.">
+  <main>
+    <section class="page-head">
+      <p class="kicker">projetos</p>
+      <h1>Coisas que venho construindo.</h1>
+      <p>
+        Projetos, experimentos e ferramentas que construí ou ajudei a construir.
+      </p>
+    </section>
+
+    <section>
+      {projects.length > 0 ? (
+        <ul class="index-list">
+          {projects.map((project) => (
+            <li class="entry">
+              <span class="date">{project.data.status ?? '—'}</span>
+              <div class="body">
+                <h3><a href={`/projetos/${project.id}/`}>{project.data.title}</a></h3>
+                <p>{project.data.description}</p>
+                {project.data.tags?.length ? (
+                  <p class="meta">{project.data.tags.join(' · ')}</p>
+                ) : null}
+              </div>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <div class="note">
+          Nenhum projeto publicado por aqui ainda.
+        </div>
+      )}
+    </section>
+  </main>
+</BaseLayout>

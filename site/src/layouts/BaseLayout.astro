@@ -1,0 +1,53 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Rafael Mayer — Engenheiro de software',
+  description = 'Site pessoal de Rafael Mayer: projetos e artigos sobre engenharia, software, automação e infraestrutura.',
+} = Astro.props;
+
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">Rafael Mayer</a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="/projetos/">projetos</a>
+        <a href="/artigos/">artigos</a>
+        <a href="/#contato">contato</a>
+      </nav>
+    </header>
+
+    <slot />
+
+    <footer class="site-footer">
+      <p>© {year} · Rafael Mayer</p>
+      <p>
+        <a href="https://github.com/rafaelmmayer/rafaelmmayer" target="_blank" rel="noreferrer">github</a>
+        <span class="sep">·</span>
+        <a href="https://www.linkedin.com/in/rafaelmmayer/" target="_blank" rel="noreferrer">linkedin</a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "rafaelmmayer-monorepo",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.3.14",
+  "workspaces": [
+    "site"
+  ],
+  "scripts": {
+    "dev": "cd site && bun run dev",
+    "build": "cd site && bun run build",
+    "preview": "cd site && bun run preview",
+    "check": "cd site && bun run check",
+    "sync": "cd site && bun astro sync"
+  }
+}

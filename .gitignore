@@ -1,0 +1,16 @@
+# dependencies
+node_modules/
+site/node_modules/
+
+# build output
+site/dist/
+site/.astro/
+
+# env
+.env
+.env.*
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
