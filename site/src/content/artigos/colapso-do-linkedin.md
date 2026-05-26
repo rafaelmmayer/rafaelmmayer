@@ -16,7 +16,7 @@ Muita gente olhou para essas ferramentas e viu um potencial enorme: aprender mai
 
 Só que uma parte considerável desse potencial foi parar no feed do LinkedIn.
 
-Pelo menos pra mim, está ficando difícil passar mais de alguns minutos por lá. O feed virou uma mistura de frases prontas, posts com estrutura idêntica, emoção plastificada, emoji em excesso e aquele formato cansado de revelação corporativa: uma frase de impacto, uma quebra de linha, uma lição de vida, outra quebra de linha, e no final algum conselho genérico sobre carreira, IA ou liderança.
+Pelo menos pra mim, está ficando difícil passar mais de alguns minutos por lá. O feed virou uma mistura de frases prontas, posts com estrutura idêntica, emoção forçada, emoji em excesso e aquele formato cansado de revelação corporativa: uma frase de impacto, uma quebra de linha, uma lição de vida, outra quebra de linha, e no final algum conselho genérico sobre carreira, IA ou liderança.
 
 A IA não inventou isso. O LinkedIn já caminhava nessa direção fazia tempo. Ela só acelerou o processo e deixou mais barato parecer profundo.
 
@@ -34,7 +34,7 @@ Isso me pegou.
 
 Não porque alguém com três anos de experiência não possa escrever coisa boa. Pode. Tem gente muito boa com pouco tempo de mercado, assim como tem gente medíocre com vinte anos de carreira. Tempo sozinho não prova muita coisa.
 
-O problema é a encenação de autoridade. Usar texto polido, termo da moda e cadência de post viral pra ocupar um lugar que exige mais do que saber formular uma frase bonita. Tecnologia cobra profundidade, erro acumulado, decisão ruim, sistema que ninguém queria mexer. Coisas que só aparecem depois de viver o problema por tempo suficiente. Quando alguém pula essa parte e se apresenta como especialista porque aprendeu a produzir conteúdo convincente, a conversa fica desonesta.
+O problema é fingir saber mais do que sabe. Usar texto polido e termo da moda pra ocupar um lugar que exige mais do que saber formular uma frase bonita. Tecnologia cobra profundidade, erro acumulado, decisão ruim, sistema que ninguém queria mexer. Coisas que só aparecem depois de viver o problema por tempo suficiente. Quando alguém pula essa parte e se apresenta como especialista porque aprendeu a produzir conteúdo convincente, a conversa fica desonesta.
 
 ## O problema não é usar IA
 
@@ -44,7 +44,7 @@ Uso no dia a dia pra praticamente tudo (código, documentação, esse artigo inc
 
 O incômodo está em outro lugar.
 
-Aprender a usar um chat pra gerar soluções, posts bonitos ou explicações razoáveis não transforma ninguém automaticamente em especialista. Existe uma diferença grande entre usar uma ferramenta pra pensar melhor e terceirizar a própria voz pra parecer maior do que é.
+Aprender a usar um chat pra gerar soluções, posts bonitos ou explicações razoáveis não transforma ninguém automaticamente em especialista. Existe uma diferença grande entre usar uma ferramenta pra pensar melhor e deixar ela falar por você pra parecer maior do que é.
 
 E talvez seja essa diferença que esteja sumindo no LinkedIn.
 
@@ -52,15 +52,15 @@ E talvez seja essa diferença que esteja sumindo no LinkedIn.
 
 A plataforma não recompensa quem sabe mais. Recompensa quem aparece mais. O algoritmo não tem muito motivo pra separar experiência real de performance bem escrita. Se parece autoridade, circula como autoridade.
 
-Aí a gente chega nesse cenário estranho: pessoas sem muita bagagem publicando como veteranos, veteranos escrevendo como marcas pessoais, empresas fingindo espontaneidade e todo mundo tentando parecer inevitável.
+Aí a gente chega nesse cenário estranho: pessoas sem muita bagagem publicando como veteranos, veteranos escrevendo como marcas pessoais, empresas fingindo espontaneidade e todo mundo tentando parecer importante.
 
 No [primeiro artigo](/artigos/por-que-este-site-existe/), escrevi que cada vez se vê menos coisa verdadeira por aí. O LinkedIn talvez seja um dos exemplos mais claros disso.
 
 Tudo ali empurra a pessoa a parecer maior do que é. Quem escreve precisa parecer produtivo, resiliente, estratégico, provocador, humilde, visionário e grato (de preferência no mesmo post). No fim, muita gente começa a escrever para sustentar uma imagem, não para dizer alguma coisa.
 
-A IA encaixa perfeitamente nesse ambiente porque ela é muito boa em produzir texto socialmente aceitável. Sabe imitar entusiasmo e transformar qualquer observação simples em lição de carreira.
+A IA encaixa perfeitamente nesse ambiente porque ela é muito boa em produzir texto que agrada. Sabe imitar entusiasmo e transformar qualquer observação simples em lição de carreira.
 
-O risco é confundir fluência com pensamento. Texto limpo não é necessariamente texto honesto.
+Texto bem escrito não quer dizer que a pessoa tem algo real pra dizer.
 
 ## No fim
 
