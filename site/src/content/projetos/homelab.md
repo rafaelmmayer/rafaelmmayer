@@ -58,7 +58,7 @@ Também tem este site. O próprio `rafaelmmayer` roda em Docker, servido por [Ng
 
 Uma parte importante do homelab é o ambiente de desenvolvimento.
 
-Uso o [T3 Code](https://github.com/pingdotgg/t3code) quando quero abrir um projeto e programar direto pelo navegador. Ele vira uma espécie de estação de trabalho remota, mas rodando aqui. Para algumas tarefas isso é mais prático do que depender da máquina em que estou no momento.
+Uso o [T3 Code](https://t3.codes/) quando quero abrir um projeto e programar direto pelo navegador. Ele vira uma espécie de estação de trabalho remota, mas rodando aqui. Para algumas tarefas isso é mais prático do que depender da máquina em que estou no momento.
 
 Também uso [code-server](https://github.com/coder/code-server) para navegar e editar arquivos. A diferença é sutil, mas no uso aparece: às vezes quero um ambiente mais voltado a código; às vezes quero só entrar no filesystem, olhar uma configuração, abrir um Compose, conferir um arquivo de serviço.
 
