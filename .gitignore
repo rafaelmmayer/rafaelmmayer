@@ -14,3 +14,5 @@ site/.astro/
 .DS_Store
 .vscode/
 .idea/
+
+tmp/

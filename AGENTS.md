@@ -4,6 +4,15 @@ Para personalidade, voz e posicionamento: ver `SOUL.md`.
 
 ---
 
+## Estilo de comunicação
+
+- Mantenha respostas curtas e concisas.
+- Não use emojis em commits, issues, comentários de PR ou código.
+- Evite fluff e preenchimento excessivamente entusiasmado. Exemplo: prefira `Thanks @user` a `Thanks so much @user!`.
+- Use prosa técnica e direta.
+- Quando o usuário fizer uma pergunta, responda primeiro antes de editar arquivos ou rodar comandos de implementação.
+- Ao responder a feedback do usuário ou a uma análise, diga explicitamente se concorda ou discorda antes de explicar o que foi alterado.
+
 ## Visão geral
 
 Site pessoal do Rafael Mayer — apresentação, projetos e artigos sobre engenharia, software, infraestrutura e o que mais aparecer pelo caminho.
