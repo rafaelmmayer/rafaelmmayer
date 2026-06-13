@@ -52,7 +52,7 @@ O [Firecrawl](https://www.firecrawl.dev/) roda com API, [Playwright](https://pla
 
 O Cloudflare Tunnel fica em um container separado. A função dele é simples: publicar apenas o que eu decidir publicar, sem expor o host inteiro. Isso é importante porque nem todo serviço do homelab deve sair para a internet. Algumas coisas são de uso local mesmo.
 
-Também tem este site. O próprio `rafaelmmayer` roda em Docker, servido por [Nginx](https://nginx.org/) e roteado pelo Traefik. O deploy ainda é simples: builda a imagem, recria o container e pronto. Por enquanto isso já resolve.
+Também tem este site. O próprio `mayerafa` roda em Docker, servido por [Nginx](https://nginx.org/) e roteado pelo Traefik. O deploy ainda é simples: builda a imagem, recria o container e pronto. Por enquanto isso já resolve.
 
 ## Código no navegador
 

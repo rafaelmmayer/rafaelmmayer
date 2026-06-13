@@ -17,6 +17,6 @@ A maior parte do que construí vive em repositórios privados ou internos, entã
 
 ## Onde me achar
 
-- Site — [rafaelmmayer.com](https://rafaelmmayer.com)
+- Site — [mayerafa.com](https://www.mayerafa.com/)
 - LinkedIn — [in/rafaelmmayer](https://linkedin.com/in/rafaelmmayer)
 - E-mail — mayer.rafa@outlook.com
