@@ -1,7 +1,7 @@
 ---
 title: Por que este site existe
 slug: por-que-este-site-existe
-description: "Um lugar meu na internet — pra expor ideias, escrever sobre software, retribuir um pouco do open source e registrar o que venho construindo."
+description: "Um lugar meu na internet para expor ideias, escrever sobre software, retribuir um pouco do open source e registrar o que venho construindo."
 date: 2026-05-26
 type: Artigo
 tags:
@@ -37,19 +37,19 @@ Coisa de quem ainda está aprendendo, do jeito que vai saindo.
 
 ## Política, mundo, opinião
 
-Apesar do meu trabalho ser software, eu não sou só software. Aqui também devem aparecer coisas mais pessoais — política, visão de mundo, opiniões sobre como as coisas funcionam (ou deixam de funcionar). Não faz sentido pra mim manter um site "meu" e ao mesmo tempo fingir que sou só engenheiro.
+Apesar do meu trabalho ser software, eu não sou só software. Aqui também devem aparecer coisas mais pessoais: política, visão de mundo, opiniões sobre como as coisas funcionam (ou deixam de funcionar). Não faz sentido pra mim manter um site "meu" e ao mesmo tempo fingir que sou só engenheiro.
 
 Se você veio só pelo lado técnico, fique à vontade pra ignorar o resto.
 
 ## Tentar ser verdadeiro
 
-Tenho a impressão de que cada vez se vê menos coisa verdadeira por aí. Quase tudo passa por algum filtro — algoritmo, engajamento, posicionamento, marketing. Opinião medida pra agradar quem precisa agradar, ou pra incomodar as pessoas certas. Texto que existe pra aparecer, não pra dizer alguma coisa.
+Tenho a impressão de que cada vez se vê menos coisa verdadeira por aí. Quase tudo passa por algum filtro: algoritmo, engajamento, posicionamento, marketing. Opinião medida pra agradar quem precisa agradar, ou pra incomodar as pessoas certas. Texto que existe pra aparecer, não pra dizer alguma coisa.
 
 Não dá pra consertar isso de fora. Mas dá pra pelo menos tentar manter este canto aqui sendo verdadeiro: escrever o que de fato penso, mesmo quando for inconveniente ou impopular. Se eu estiver errado, melhor descobrir publicando do que guardar a ideia errada na cabeça. E se eu mudar de opinião depois, escrevo sobre isso também.
 
 ## Uma forma de retribuir o open source
 
-Praticamente tudo que eu construí na vida foi em cima de software livre — linguagens, ferramentas, sistemas operacionais. Quase nada disso seria possível sem gente que escolheu publicar o próprio trabalho sem cobrar nada por isso.
+Praticamente tudo que eu construí na vida foi em cima de software livre: linguagens, ferramentas, sistemas operacionais. Quase nada disso seria possível sem gente que escolheu publicar o próprio trabalho sem cobrar nada por isso.
 
 Escrever em público devolve um pouco do que recebi. Alguém escreveu sobre o que aprendeu, eu li, aprendi, agora é a minha vez.
 
