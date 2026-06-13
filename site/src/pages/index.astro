@@ -8,6 +8,10 @@ const formatShort = (date: Date) =>
 const writings = (await getCollection('artigos', ({ data }) => data.published !== false))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0, 4);
+
+const projects = (await getCollection('projetos', ({ data }) => data.published !== false))
+  .sort((a, b) => (b.data.date?.getTime() ?? 0) - (a.data.date?.getTime() ?? 0))
+  .slice(0, 3);
 ---
 
 <BaseLayout>
@@ -67,6 +71,23 @@ const writings = (await getCollection('artigos', ({ data }) => data.published !=
         Coisas que desenvolvi ou ainda estou desenvolvendo — produtos, ferramentas internas,
         automações e experimentos.
       </p>
+
+      {projects.length > 0 ? (
+        <ul class="index-list">
+          {projects.map((project) => (
+            <li class="entry">
+              <span class="date">{project.data.status ?? '—'}</span>
+              <div class="body">
+                <h3><a href={`/projetos/${project.id}/`}>{project.data.title}</a></h3>
+                <p>{project.data.description}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <div class="note">Os primeiros projetos ainda vão aparecer por aqui.</div>
+      )}
+
       <p class="inline-links" style="margin-top:1.25rem">
         <a href="/projetos/">ver projetos →</a>
       </p>
