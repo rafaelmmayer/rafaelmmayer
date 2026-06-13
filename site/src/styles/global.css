@@ -472,6 +472,7 @@ p {
   font-family: var(--font-mono);
   background: #08080a;
   border: 1px solid var(--color-line-soft);
+  margin: 0.5rem 0 1.5rem;
   padding: 1rem 1.15rem;
   border-radius: 4px;
   overflow-x: auto;
@@ -491,6 +492,49 @@ p {
   padding-left: 1.25rem;
   color: var(--color-ink-muted);
   font-style: italic;
+}
+
+.prose .flow-map {
+  margin: 0.5rem 0 1.5rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--color-line-soft);
+  border-radius: 4px;
+  background: var(--color-night-2);
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--color-ink-muted);
+}
+
+.prose .flow-map span {
+  display: block;
+  position: relative;
+  padding-left: 1.35rem;
+}
+
+.prose .flow-map span::before {
+  content: "";
+  position: absolute;
+  left: 0.35rem;
+  top: 0.65em;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 999px;
+  background: var(--color-orange);
+}
+
+.prose .flow-map span + span {
+  margin-top: 0.8rem;
+}
+
+.prose .flow-map span + span::after {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  top: -0.8rem;
+  width: 1px;
+  height: 0.8rem;
+  background: var(--color-line);
 }
 
 .prose hr {

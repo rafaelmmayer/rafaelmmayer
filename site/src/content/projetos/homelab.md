@@ -26,17 +26,13 @@ A base é um servidor em casa rodando [Docker](https://www.docker.com/), alguns 
 
 O desenho mental é mais ou menos este:
 
-```text
-navegador, terminal ou agente
-        ↓
-DNS local ou Cloudflare Tunnel
-        ↓
-Traefik
-        ↓
-serviços internos
-        ↓
-código, arquivos, tarefas, busca e memória
-```
+<div class="flow-map" aria-label="Fluxo de acesso aos serviços do homelab">
+  <span>navegador, terminal ou agente</span>
+  <span>DNS local ou Cloudflare Tunnel</span>
+  <span>Traefik</span>
+  <span>serviços internos</span>
+  <span>código, arquivos, tarefas, busca e memória</span>
+</div>
 
 Traefik é a porta de entrada local. [Technitium DNS](https://technitium.com/dns/) cuida do DNS. [Docker Compose](https://docs.docker.com/compose/) deixa cada serviço em uma pasta própria, com estado, configuração e rede bem definidos. Alguns serviços rodam como containers; outros rodam direto no host via systemd quando isso faz mais sentido.
 

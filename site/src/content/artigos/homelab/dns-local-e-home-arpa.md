@@ -77,15 +77,12 @@ O DNS não precisa saber todos os detalhes do serviço. Ele só precisa levar o 
 
 O desenho que mais aparece por aqui é este:
 
-```text
-navegador
-  ↓
-DNS local
-  ↓
-Traefik
-  ↓
-serviço
-```
+<div class="flow-map" aria-label="Fluxo entre navegador, DNS local, Traefik e serviço">
+  <span>navegador</span>
+  <span>DNS local</span>
+  <span>Traefik</span>
+  <span>serviço</span>
+</div>
 
 O DNS responde que `homepage.home.arpa` aponta para o lugar onde o Traefik está ouvindo. O Traefik olha o hostname e encaminha para o container ou para o serviço no host.
 
