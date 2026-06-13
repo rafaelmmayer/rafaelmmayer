@@ -9,6 +9,7 @@ const artigos = defineCollection({
     description: z.string(),
     date: z.coerce.date(),
     type: z.string().optional(),
+    order: z.number().optional(),
     tags: z.array(z.string()).default([]),
     published: z.boolean().default(true),
   }),

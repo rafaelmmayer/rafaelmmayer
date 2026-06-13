@@ -18,6 +18,18 @@ const formattedDate = post.data.date.toLocaleDateString('pt-BR', {
   month: 'long',
   year: 'numeric',
 });
+
+const articleGroup = (id: string) => {
+  const [group] = id.split('/');
+  if (!id.includes('/')) return null;
+
+  return group
+    .split('-')
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(' ');
+};
+
+const group = articleGroup(post.id);
 ---
 
 <BaseLayout title={`${post.data.title} — Rafael Mayer`} description={post.data.description}>
@@ -27,6 +39,9 @@ const formattedDate = post.data.date.toLocaleDateString('pt-BR', {
     <h1>{post.data.title}</h1>
     <p class="lead">{post.data.description}</p>
     <p class="post-meta">{formattedDate}{post.data.tags?.length ? ` · ${post.data.tags.join(' · ')}` : ''}</p>
+    {group ? (
+      <p class="series-meta">série: {group}{post.data.order ? ` · parte ${post.data.order}` : ''}</p>
+    ) : null}
     <Content />
   </article>
 </BaseLayout>

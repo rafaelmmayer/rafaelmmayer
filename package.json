@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "dev": "cd site && bun run dev",
+    "dev:host": "cd site && bun run dev:host",
     "build": "cd site && bun run build",
     "preview": "cd site && bun run preview",
     "check": "cd site && bun run check",

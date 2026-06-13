@@ -7,7 +7,7 @@ tags:
   - linkedin
   - ia
   - trabalho
-published: true
+published: false
 ---
 
 Eu queria falar um pouco sobre o colapso do LinkedIn depois da popularização da IA.

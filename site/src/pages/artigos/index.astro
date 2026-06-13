@@ -5,6 +5,16 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 const formatShort = (date: Date) =>
   date.toLocaleDateString('pt-BR', { month: 'short', year: 'numeric' }).replace('.', '');
 
+const articleGroup = (id: string) => {
+  const [group] = id.split('/');
+  if (!id.includes('/')) return null;
+
+  return group
+    .split('-')
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(' ');
+};
+
 const posts = (await getCollection('artigos', ({ data }) => data.published !== false))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
@@ -22,18 +32,25 @@ const posts = (await getCollection('artigos', ({ data }) => data.published !== f
     <section>
       {posts.length > 0 ? (
         <ul class="index-list">
-          {posts.map((post) => (
-            <li class="entry">
-              <span class="date">{formatShort(post.data.date)}</span>
-              <div class="body">
-                <h3><a href={`/artigos/${post.id}/`}>{post.data.title}</a></h3>
-                <p>{post.data.description}</p>
-                {post.data.tags?.length ? (
-                  <p class="meta">{post.data.tags.join(' · ')}</p>
-                ) : null}
-              </div>
-            </li>
-          ))}
+          {posts.map((post) => {
+            const group = articleGroup(post.id);
+
+            return (
+              <li class="entry">
+                <span class="date">{formatShort(post.data.date)}</span>
+                <div class="body">
+                  <h3><a href={`/artigos/${post.id}/`}>{post.data.title}</a></h3>
+                  <p>{post.data.description}</p>
+                  {group ? (
+                    <p class="meta">série: {group}{post.data.order ? ` · parte ${post.data.order}` : ''}</p>
+                  ) : null}
+                  {post.data.tags?.length ? (
+                    <p class="meta">{post.data.tags.join(' · ')}</p>
+                  ) : null}
+                </div>
+              </li>
+            );
+          })}
         </ul>
       ) : (
         <div class="note">Nenhum artigo publicado ainda.</div>

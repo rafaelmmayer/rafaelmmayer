@@ -418,6 +418,19 @@ p {
   letter-spacing: 0.02em;
 }
 
+.prose .post-meta:has(+ .series-meta) {
+  margin-bottom: 0.75rem;
+}
+
+.prose .series-meta {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-orange-soft);
+  margin: 0 0 2.5rem;
+  letter-spacing: 0.02em;
+  text-transform: lowercase;
+}
+
 .prose h2 {
   font-family: var(--font-serif);
   font-size: 1.4rem;

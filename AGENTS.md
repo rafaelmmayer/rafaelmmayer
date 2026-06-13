@@ -36,7 +36,7 @@ AGENTS.md                    este arquivo
 /projetos/           lista de projetos
 /projetos/[slug]/    página individual
 /artigos/            lista de artigos
-/artigos/[slug]/     página individual
+/artigos/[...slug]/  página individual, incluindo artigos em subpastas
 ```
 
 ## Seções da home
@@ -98,6 +98,23 @@ tags: [tag1, tag2]
 published: false
 ---
 ```
+
+**Séries de artigos:** usar subpasta em `site/src/content/artigos/<serie>/<slug>.md`.
+
+Todo `.md` dentro de uma subpasta é tratado como parte da série com o nome da pasta. Exemplo:
+
+```text
+site/src/content/artigos/homelab/dns-local-e-home-arpa.md
+site/src/content/artigos/homelab/traefik-como-porta-de-entrada.md
+```
+
+Usar `order` no frontmatter para indicar a parte da série:
+
+```yaml
+order: 1
+```
+
+Artigos soltos em `site/src/content/artigos/*.md` continuam sendo tratados como artigos normais.
 
 **Novo projeto:** `site/src/content/projetos/<slug>.md`
 
