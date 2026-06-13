@@ -11,7 +11,7 @@ tags:
 published: true
 ---
 
-Tem uma parte do homelab que parece pequena até você tirar. Depois que acostuma, voltar para IP e porta parece trabalhar com etiqueta provisória em tudo.
+Tem uma parte do [meu homelab](/projetos/homelab/) que parece pequena até você tirar. Depois que acostuma, voltar para IP e porta parece trabalhar com etiqueta provisória em tudo.
 
 No começo eu ainda abria serviço com endereço assim:
 
