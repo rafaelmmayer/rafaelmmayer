@@ -19,57 +19,52 @@ const projects = (await getCollection('projetos', ({ data }) => data.published !
     <section class="hero">
       <h1>Oi, eu sou o Rafael.</h1>
       <p class="lead">
-        Engenheiro de software. Gosto de construir ferramentas para problemas técnicos. Aqui escrevo sobre isso e sobre o que mais me passar pela cabeça.
+        Trabalho com software, engenharia e infraestrutura. Uso este site para registrar projetos,
+        escrever sobre decisões técnicas e organizar algumas ideias fora do trabalho.
       </p>
     </section>
 
     <section class="section" id="sobre">
       <p class="section-label">sobre</p>
       <p>
-        Sou engenheiro de software e atuo como head de tecnologia no
-        <a href="https://optype.com.br" target="_blank" rel="noreferrer">Optype</a>, uma
-        plataforma para estudos estruturais que automatiza a geração de quantitativos e taxas a
-        partir do modelo arquitetônico.
+        Trabalho no
+        <a href="https://optype.com.br" target="_blank" rel="noreferrer">Optype</a>, onde cuido
+        de produto e tecnologia em uma plataforma para estudos estruturais. Antes disso, liderei
+        softwares internos na RM, com ferramentas de engenharia, automações Revit e sistemas para
+        o trabalho técnico das equipes.
       </p>
       <p>
-        Antes do Optype, trabalhei na RM como líder técnico dos softwares internos da empresa,
-        tocando projetos como AlvMais e Gear — ferramentas de engenharia, automações Revit e
-        sistemas que conectavam o trabalho técnico ao dia a dia das equipes.
+        Me interessam os pontos onde software encontra engenharia: modelos, cálculos, arquivos
+        técnicos e decisões que precisam continuar fazendo sentido depois que o código está em
+        produção.
       </p>
       <p>
-        Tenho interesse pelos pontos onde software encontra engenharia: modelos, cálculos,
-        arquivos técnicos e a colaboração entre equipes que precisam confiar no resultado. Fora
-        do trabalho, gosto bastante de open source, homelab e self-hosting — passo um bom tempo
-        mexendo em servidores, infraestrutura e ferramentas que rodam por aqui.
-      </p>
-      <p>
-        Este é um espaço pessoal, então não é só sobre tecnologia — também aparecem opiniões
-        sobre política, visão de mundo e o que mais me passar pela cabeça.
+        Fora do trabalho, passo um bom tempo mexendo em open source, homelab, self-hosting e
+        ferramentas que rodam por aqui. Também escrevo sobre política, visão de mundo e outras
+        coisas que não cabem direito em uma apresentação profissional.
       </p>
     </section>
 
     <section class="section">
       <p class="section-label">agora</p>
       <p>
-        Liderando a tecnologia do
-        <a href="https://optype.com.br/" target="_blank" rel="noreferrer">Optype</a>
-        — arquitetura da plataforma, decisões técnicas e
-        construção do produto junto com o time. No dia a dia isso vira backend .NET, frontend
-        Vue, um app desktop em Electron com integração TQS e bastante atenção aos detalhes de
-        domínio estrutural.
+        Meu foco agora está no
+        <a href="https://optype.com.br/" target="_blank" rel="noreferrer">Optype</a>: seguir
+        amadurecendo a plataforma, tomar decisões técnicas com menos pressa e construir o produto
+        junto com o time.
       </p>
       <p>
-        Fora do Optype, mexo em projetos pessoais, experimentos com infraestrutura no homelab
-        e escrevo sobre o que aprendo no meio do caminho.
+        Fora dali, sigo mexendo no homelab, publicando alguns projetos pessoais e escrevendo
+        sobre o que vou aprendendo no caminho.
       </p>
-      <p class="now-stamp">atualizado em maio de 2026</p>
+      <p class="now-stamp">atualizado em junho de 2026</p>
     </section>
 
     <section class="section" id="projetos">
       <p class="section-label">projetos</p>
       <p>
-        Coisas que desenvolvi ou ainda estou desenvolvendo — produtos, ferramentas internas,
-        automações e experimentos.
+        Algumas coisas que venho construindo ou mantendo. Tem produto, ferramenta interna,
+        automação, infraestrutura de casa e experimento que valeu registrar.
       </p>
 
       {projects.length > 0 ? (
@@ -96,7 +91,8 @@ const projects = (await getCollection('projetos', ({ data }) => data.published !
     <section class="section" id="artigos">
       <p class="section-label">artigos</p>
       <p>
-        Artigos técnicos, aprendizados de projeto e reflexões sobre engenharia, software e automação.
+        Textos para organizar pensamento sobre engenharia, software, infraestrutura e outras
+        coisas que não cabem bem em uma conversa rápida.
       </p>
 
       {writings.length > 0 ? (
@@ -123,7 +119,7 @@ const projects = (await getCollection('projetos', ({ data }) => data.published !
     <section class="section" id="contato">
       <p class="section-label">contato</p>
       <p>
-        Se quiser trocar ideia, é só me chamar por
+        Se quiser trocar ideia, me chama por
         <a href="mailto:mayer.rafa@outlook.com">e-mail</a>
         <span class="sep">·</span>
         <a href="https://www.linkedin.com/in/rafaelmmayer/" target="_blank" rel="noreferrer">linkedin</a>
