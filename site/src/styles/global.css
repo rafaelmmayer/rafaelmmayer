@@ -544,11 +544,36 @@ p {
 }
 
 .prose ul, .prose ol {
-  padding-left: 1.25rem;
+  margin: 0.5rem 0 1.5rem;
+  padding-left: 0;
+}
+
+.prose ul {
+  list-style: none;
+}
+
+.prose ol {
+  list-style-position: inside;
 }
 
 .prose li {
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.55rem;
+}
+
+.prose ul li {
+  position: relative;
+  padding-left: 1.35rem;
+}
+
+.prose ul li::before {
+  content: "";
+  position: absolute;
+  left: 0.25rem;
+  top: 0.72em;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 999px;
+  background: var(--color-orange);
 }
 
 /* ---------- Page header for index pages ---------- */
