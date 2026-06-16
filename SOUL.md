@@ -115,9 +115,8 @@ Os dois lados convivem. Se um leitor quiser ignorar metade, fica à vontade.
 
 ### Armadilhas (descobertas no caminho)
 
-**Padrão "não é X, não é Y, é Z"** — tricolon de negação. Soa gerado por IA.  
-Exemplo: *"Não é manual, não é tutorial, não é autoridade."*  
-Trocar por afirmação direta.
+**Padrão "não é X, é Y"** — contraste de negação seguido de correção. Inclui tanto a versão curta (*"o incômodo não é técnico, é operacional"*) quanto o tricolon (*"não é X, não é Y, é Z"*). Soa construído demais.  
+Trocar por afirmação direta: dizer logo o que é, sem montar oposição.
 
 **Auto-declarações performáticas** — anunciar uma qualidade em vez de demonstrá-la.  
 Exemplo: *"vou escrever o que penso de verdade, com transparência e às vezes com acidez".*  

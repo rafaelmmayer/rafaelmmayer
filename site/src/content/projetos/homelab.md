@@ -36,7 +36,7 @@ O desenho mental é mais ou menos este:
 
 Traefik é a porta de entrada local. [Technitium DNS](https://technitium.com/dns/) cuida do DNS. [Docker Compose](https://docs.docker.com/compose/) deixa cada serviço em uma pasta própria, com estado, configuração e rede bem definidos. Alguns serviços rodam como containers; outros rodam direto no host via systemd quando isso faz mais sentido.
 
-Não é uma arquitetura definitiva. É uma arquitetura que foi crescendo conforme eu fui usando.
+A arquitetura foi crescendo conforme eu fui usando.
 
 ## O que roda hoje
 
@@ -98,7 +98,7 @@ Quando dá certo, parece pouca coisa. E talvez seja mesmo. Só que pouca coisa r
 
 Esta página fica como visão geral do projeto. Em paralelo, estou organizando uma série de artigos para abrir cada parte com mais calma. Não precisa ter um artigo introdutório separado, porque a introdução já é esta página.
 
-O primeiro texto da série é sobre [DNS local e `home.arpa`](/artigos/homelab/dns-local-e-home-arpa/). Depois quero escrever sobre Traefik, Cloudflare Tunnel, busca e leitura da web, código no navegador e o uso do Bob como parte da operação.
+A série já tem textos sobre [DNS local e `home.arpa`](/artigos/homelab/dns-local-e-home-arpa/) e [Traefik como porta de entrada](/artigos/homelab/traefik-como-porta-de-entrada/). Depois quero escrever sobre Cloudflare Tunnel, busca e leitura da web, código no navegador e o uso do Bob como parte da operação.
 
 Prefiro assim porque o homelab muda o tempo todo. O projeto registra o estado geral. A série deixa espaço para entrar nos detalhes e continuar quando alguma peça nova aparecer.
 
