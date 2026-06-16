@@ -4,6 +4,7 @@ slug: homelab
 description: "Um ambiente pessoal para código, automação, tarefas, serviços internos e experimentos de infraestrutura rodando em casa."
 status: em construção
 date: 2026-06-13
+updated: 2026-06-15
 tags:
   - homelab
   - self-hosting

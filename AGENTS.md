@@ -102,6 +102,8 @@ bun run sync      # regenera tipos de coleções
 title: Título
 description: "Resumo curto."
 date: 2026-05-26
+# opcional, só quando um texto publicado for revisado
+updated: 2026-06-15
 type: Artigo
 tags: [tag1, tag2]
 published: false
@@ -133,12 +135,14 @@ title: Nome
 description: "Resumo curto."
 status: em andamento
 date: 2026-05-26
+# opcional, só quando um projeto publicado for revisado
+updated: 2026-06-15
 tags: [tag1]
 published: false
 ---
 ```
 
-Usar `published: false` até o conteúdo estar pronto. Datas em ISO (`YYYY-MM-DD`).
+Usar `published: false` até o conteúdo estar pronto. Datas em ISO (`YYYY-MM-DD`). Campo `updated` é opcional e só deve aparecer quando um texto ou projeto publicado for revisado. O site formata datas com `timeZone: 'UTC'` para evitar deslocamento de dia em datas sem horário.
 
 ## Commits
 

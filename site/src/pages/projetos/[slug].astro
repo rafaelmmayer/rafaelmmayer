@@ -13,6 +13,26 @@ export async function getStaticPaths() {
 
 const { project } = Astro.props;
 const { Content } = await render(project);
+const formatLongDate = (date: Date) => date.toLocaleDateString('pt-BR', {
+  day: '2-digit',
+  month: 'long',
+  year: 'numeric',
+  timeZone: 'UTC',
+});
+
+const projectMeta: string[] = [];
+
+if (project.data.date) {
+  projectMeta.push(`publicado em ${formatLongDate(project.data.date)}`);
+}
+
+if (project.data.updated && (!project.data.date || project.data.updated.getTime() > project.data.date.getTime())) {
+  projectMeta.push(`atualizado em ${formatLongDate(project.data.updated)}`);
+}
+
+if (project.data.tags?.length) {
+  projectMeta.push(project.data.tags.join(' · '));
+}
 ---
 
 <BaseLayout title={`${project.data.title} — Rafael Mayer`} description={project.data.description}>
@@ -21,8 +41,8 @@ const { Content } = await render(project);
     <p class="kicker">{project.data.status ?? 'projeto'}</p>
     <h1>{project.data.title}</h1>
     <p class="lead">{project.data.description}</p>
-    {project.data.tags?.length ? (
-      <p class="post-meta">{project.data.tags.join(' · ')}</p>
+    {projectMeta.length ? (
+      <p class="post-meta">{projectMeta.join(' · ')}</p>
     ) : null}
     <Content />
   </article>

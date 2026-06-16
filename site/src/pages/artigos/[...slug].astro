@@ -13,11 +13,24 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
-const formattedDate = post.data.date.toLocaleDateString('pt-BR', {
+const formatLongDate = (date: Date) => date.toLocaleDateString('pt-BR', {
   day: '2-digit',
   month: 'long',
   year: 'numeric',
+  timeZone: 'UTC',
 });
+
+const formattedDate = formatLongDate(post.data.date);
+const showUpdated = post.data.updated && post.data.updated.getTime() > post.data.date.getTime();
+const postMeta = [`publicado em ${formattedDate}`];
+
+if (showUpdated && post.data.updated) {
+  postMeta.push(`atualizado em ${formatLongDate(post.data.updated)}`);
+}
+
+if (post.data.tags?.length) {
+  postMeta.push(post.data.tags.join(' · '));
+}
 
 const articleGroup = (id: string) => {
   const [group] = id.split('/');
@@ -38,7 +51,7 @@ const group = articleGroup(post.id);
     <p class="kicker">{post.data.type ?? 'artigo'}</p>
     <h1>{post.data.title}</h1>
     <p class="lead">{post.data.description}</p>
-    <p class="post-meta">{formattedDate}{post.data.tags?.length ? ` · ${post.data.tags.join(' · ')}` : ''}</p>
+    <p class="post-meta">{postMeta.join(' · ')}</p>
     {group ? (
       <p class="series-meta">série: {group}{post.data.order ? ` · parte ${post.data.order}` : ''}</p>
     ) : null}

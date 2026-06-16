@@ -2,6 +2,7 @@
 title: "Homelab: DNS local e home.arpa"
 description: "Como uso DNS local no homelab para parar de decorar IP, porta e caminho de serviço."
 date: 2026-06-13
+updated: 2026-06-15
 type: Artigo
 order: 1
 tags:
@@ -21,7 +22,7 @@ http://192.168.x.y:3000
 http://192.168.x.y:9443
 ```
 
-Funciona. Só que funciona do jeito chato. Você precisa lembrar qual porta é de qual serviço, onde salvou aquele link, se mudou alguma coisa no compose, se aquele painel está no host ou em container. Não é difícil. É só uma pequena interrupção repetida muitas vezes.
+Funciona. Só que funciona do jeito chato. Você precisa lembrar qual porta é de qual serviço, onde salvou aquele link, se mudou alguma coisa no compose, se aquele painel está no host ou em container. Essa pequena interrupção se repete muitas vezes.
 
 DNS local entrou no meu homelab para resolver isso.
 
@@ -29,7 +30,7 @@ DNS local entrou no meu homelab para resolver isso.
 
 Eu queria que os serviços tivessem nomes.
 
-Não nomes públicos, nem domínios bonitos para mostrar para alguém. Nomes locais mesmo. Coisas que fazem sentido dentro da minha rede:
+Eu queria nomes locais mesmo. Coisas que fazem sentido dentro da minha rede:
 
 ```text
 homepage.home.arpa
@@ -48,7 +49,7 @@ Eu poderia ter inventado qualquer domínio local. Muita gente usa `.local`, `.la
 
 Preferi `home.arpa` porque ele existe justamente para esse tipo de rede doméstica. O [RFC 8375](https://www.rfc-editor.org/rfc/rfc8375.html) reserva `home.arpa` para uso em redes residenciais. Isso evita algumas gambiarrazinhas que parecem inocentes no começo e depois viram ruído: conflito com mDNS, domínio inventado que pode existir no futuro, certificado estranho, resolver externo recebendo consulta que não deveria.
 
-Não quer dizer que todo homelab precisa usar `home.arpa`. Quer dizer só que, se a ideia é ter nomes locais, vale usar o nome que já foi reservado para isso.
+Isso não obriga todo homelab a usar `home.arpa`. Para quem quer nomes locais, faz sentido começar pelo nome que já foi reservado para isso.
 
 No meu caso ficou simples:
 
@@ -62,7 +63,7 @@ O nome diz duas coisas ao mesmo tempo. Primeiro: isso é interno. Segundo: se eu
 
 O DNS local hoje fica no [Technitium DNS](https://technitium.com/dns/). Ele mantém a zona `home.arpa` e responde os nomes da rede interna. Também uso o DNS como bloqueador de anúncios na rede, filtrando parte do lixo antes dele chegar nos dispositivos.
 
-Poderia ser outro servidor DNS. O ponto importante não é a ferramenta. O ponto é ter uma zona local que eu controlo.
+Poderia ser outro servidor DNS. A ferramenta importa menos do que ter uma zona local que eu controlo.
 
 Quando crio um serviço novo, a sequência mental fica mais ou menos assim:
 
@@ -88,11 +89,13 @@ O DNS responde que `homepage.home.arpa` aponta para o lugar onde o Traefik está
 
 Essa separação deixa o setup mais fácil de mexer. Se eu troco a porta interna de um serviço, o endereço no navegador continua igual. Se eu movo um serviço de container para systemd, ou o contrário, consigo preservar o nome. Se eu recrio um compose, não preciso ensinar meu cérebro de novo onde aquilo mora.
 
+Entrei com mais calma nessa camada no [texto sobre Traefik como porta de entrada](/artigos/homelab/traefik-como-porta-de-entrada/).
+
 Também ajuda o Bob. Quando eu peço para ele mexer em alguma coisa, o nome local carrega contexto. `search.home.arpa` é melhor do que `172.20.0.1:alguma-porta`. Um nome bom reduz explicação.
 
-## Local não é público
+## A fronteira local
 
-Uma coisa que tento manter clara: resolver um nome na LAN não é o mesmo que publicar um serviço na internet.
+Uma coisa que tento manter clara: resolver um nome na LAN e publicar um serviço na internet são decisões diferentes.
 
 `home.arpa` é para dentro. Se algo precisa ser acessado de fora, eu trato como outra decisão. Aí entra Cloudflare Tunnel, autenticação, regra de exposição e um pouco mais de paranoia.
 
