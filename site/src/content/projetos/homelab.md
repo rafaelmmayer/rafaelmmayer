@@ -4,7 +4,7 @@ slug: homelab
 description: "Um ambiente pessoal para código, automação, tarefas, serviços internos e experimentos de infraestrutura rodando em casa."
 status: em construção
 date: 2026-06-13
-updated: 2026-06-15
+updated: 2026-06-22
 tags:
   - homelab
   - self-hosting
@@ -99,7 +99,7 @@ Quando dá certo, parece pouca coisa. E talvez seja mesmo. Só que pouca coisa r
 
 Esta página fica como visão geral do projeto. Em paralelo, estou organizando uma série de artigos para abrir cada parte com mais calma. Não precisa ter um artigo introdutório separado, porque a introdução já é esta página.
 
-A série já tem textos sobre [DNS local e `home.arpa`](/artigos/homelab/dns-local-e-home-arpa/) e [Traefik como porta de entrada](/artigos/homelab/traefik-como-porta-de-entrada/). Depois quero escrever sobre Cloudflare Tunnel, busca e leitura da web, código no navegador e o uso do Bob como parte da operação.
+A série já tem textos sobre [DNS local e `home.arpa`](/artigos/homelab/dns-local-e-home-arpa/), [Traefik como porta de entrada](/artigos/homelab/traefik-como-porta-de-entrada/) e [Cloudflare Tunnel sem abrir o roteador](/artigos/homelab/cloudflare-tunnel/). Depois quero escrever sobre busca e leitura da web, código no navegador e o uso do Bob como parte da operação.
 
 Prefiro assim porque o homelab muda o tempo todo. O projeto registra o estado geral. A série deixa espaço para entrar nos detalhes e continuar quando alguma peça nova aparecer.
 
