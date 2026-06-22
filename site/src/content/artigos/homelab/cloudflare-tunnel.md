@@ -1,14 +1,14 @@
 ---
 title: "Homelab: Cloudflare Tunnel sem abrir o roteador"
 description: "Como penso a exposição pública de alguns serviços do homelab usando Cloudflare Tunnel, sem abrir porta direta para o host."
-date: 2026-06-16
+date: 2026-06-22
 type: Artigo
 order: 3
 tags:
   - homelab
   - cloudflare
   - segurança
-published: false
+published: true
 ---
 
 Nos dois primeiros textos da série, falei de duas camadas que deixam o homelab mais confortável de usar: [DNS local](/artigos/homelab/dns-local-e-home-arpa/) para dar nome às coisas e [Traefik](/artigos/homelab/traefik-como-porta-de-entrada/) para centralizar a entrada dos serviços web.
