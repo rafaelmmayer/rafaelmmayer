@@ -43,10 +43,10 @@ Prefiro evitar esse caminho.
 
 Com Cloudflare Tunnel, o servidor de casa abre uma conexão de saída para a Cloudflare. A internet chega até a Cloudflare, e a Cloudflare entrega o tráfego pelo túnel já estabelecido. Eu não preciso abrir uma porta pública direto para o host.
 
-O desenho fica assim:
+O caminho fica mais fácil de entender como sequência:
 
-<div class="flow-map" aria-label="Fluxo entre internet, Cloudflare Tunnel, Traefik e serviço">
-  <span>internet</span>
+<div class="flow-map" aria-label="Fluxo entre navegador fora da rede, Cloudflare, cloudflared, Traefik e serviço publicado">
+  <span>navegador fora da rede</span>
   <span>Cloudflare</span>
   <span>cloudflared</span>
   <span>Traefik</span>
