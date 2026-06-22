@@ -7,7 +7,7 @@ tags:
   - linkedin
   - ia
   - trabalho
-published: false
+published: true
 ---
 
 Eu queria falar um pouco sobre o colapso do LinkedIn depois da popularização da IA.
@@ -32,7 +32,7 @@ Não porque alguém com três anos de experiência não possa escrever coisa boa
 
 O problema é fingir saber mais do que sabe. Usar texto polido e termo da moda pra ocupar um lugar que exige mais do que saber formular uma frase bonita. Tecnologia cobra profundidade, erro acumulado, decisão ruim, sistema que ninguém queria mexer. Coisas que só aparecem depois de viver o problema por tempo suficiente. Quando alguém pula essa parte e se apresenta como especialista porque aprendeu a produzir conteúdo convincente, a conversa fica desonesta.
 
-## O problema não é usar IA
+## Onde está o incômodo
 
 Eu uso IA todos os dias.
 
