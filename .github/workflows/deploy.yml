@@ -10,6 +10,11 @@ concurrency:
   group: rafaelmmayer-deploy
   cancel-in-progress: false
 
+env:
+  REGISTRY: registry.home.arpa:5000
+  REGISTRY_USER: actions
+  IMAGE_NAME: rafaelmmayer-site
+
 jobs:
   deploy:
     runs-on:
@@ -22,11 +27,23 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build image
-        run: sudo -n buildah bud --isolation chroot --format docker -t rafaelmmayer-site:local .
+      - name: Login to homelab registry
+        run: printf '%s' "$REGISTRY_PASSWORD" | docker login "$REGISTRY" --username "$REGISTRY_USER" --password-stdin
+        env:
+          REGISTRY_PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
 
-      - name: Export image
-        run: sudo -n buildah push rafaelmmayer-site:local "docker-archive:${RUNNER_TEMP}/rafaelmmayer-site.tar:rafaelmmayer-site:local"
+      - name: Build image
+        run: |
+          docker build \
+            --pull \
+            --tag "$REGISTRY/$IMAGE_NAME:$GITHUB_SHA" \
+            --tag "$REGISTRY/$IMAGE_NAME:main" \
+            .
+
+      - name: Push image
+        run: |
+          docker push "$REGISTRY/$IMAGE_NAME:$GITHUB_SHA"
+          docker push "$REGISTRY/$IMAGE_NAME:main"
 
       - name: Deploy image on homelab host
-        run: cat "${RUNNER_TEMP}/rafaelmmayer-site.tar" | ssh -i ~/.ssh/id_ed25519_deploy -o IdentitiesOnly=yes -o BatchMode=yes mayer@10.88.0.1
+        run: ssh -i ~/.ssh/id_ed25519_deploy -o IdentitiesOnly=yes -o BatchMode=yes mayer@10.88.0.1
