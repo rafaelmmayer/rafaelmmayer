@@ -46,4 +46,15 @@ jobs:
           docker push "$REGISTRY/$IMAGE_NAME:main"
 
       - name: Deploy image on homelab host
-        run: ssh -i ~/.ssh/id_ed25519_deploy -o IdentitiesOnly=yes -o BatchMode=yes mayer@10.88.0.1
+        run: |
+          ssh \
+            -T \
+            -i ~/.ssh/id_ed25519_deploy \
+            -o IdentitiesOnly=yes \
+            -o BatchMode=yes \
+            mayer@10.88.0.1 <<'DEPLOY'
+          cd /home/mayer/homelab/rafaelmmayer
+          docker pull registry.home.arpa:5000/rafaelmmayer-site:main
+          docker compose up -d --no-build --remove-orphans
+          docker compose ps
+          DEPLOY
