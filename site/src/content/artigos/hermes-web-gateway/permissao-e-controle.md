@@ -13,6 +13,8 @@ published: true
 
 Um agente operacional precisa pedir licença em alguns momentos.
 
+Depois de [falar sobre simular antes de conectar](/artigos/hermes-web-gateway/simular-antes-de-conectar/), vale entrar na fronteira que aparece quando o agente pode agir: permissão e controle.
+
 Isso parece óbvio quando falamos em comandos destrutivos, mas a fronteira real é mais sutil. Editar arquivo, rodar script, reiniciar serviço, publicar uma rota, apagar sessão, mudar configuração, enviar algo para fora. Cada uma dessas ações pode ser pequena dentro do fluxo e grande fora dele.
 
 Se a interface trata tudo como mensagem comum, a consequência fica escondida.

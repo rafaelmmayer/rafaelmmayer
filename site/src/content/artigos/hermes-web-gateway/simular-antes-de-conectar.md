@@ -13,6 +13,8 @@ published: true
 
 Começar pelo mock foi uma decisão mais importante do que parecia.
 
+No [texto anterior](/artigos/hermes-web-gateway/uma-interface-para-operar-agentes/), falei da interface como bancada para operar agentes. Aqui a pergunta é outra: como pensar essa interface antes de ligar no Hermes real.
+
 O objetivo do Hermes Web Gateway é falar com o Hermes real. Mesmo assim, ligar direto no agente desde o primeiro dia teria deixado tudo mais confuso. Cada ajuste de interface dependeria de uma sessão real, de autenticação, de estado, de resposta do modelo, de tokens e de uma sequência difícil de repetir.
 
 Eu queria separar duas perguntas.

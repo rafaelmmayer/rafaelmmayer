@@ -13,6 +13,8 @@ published: true
 
 Construir uma ferramenta para conversar com o Bob usando o próprio Bob é uma experiência curiosa.
 
+No [texto anterior](/artigos/hermes-web-gateway/permissao-e-controle/), falei da fronteira de permissão quando um agente pode agir. Este texto olha para outra fronteira: o momento em que uma ferramenta deixa de ser só protótipo e começa a ocupar lugar estável no homelab.
+
 Existe uma produtividade real. Eu consigo pedir uma alteração, revisar um caminho, corrigir um erro, rodar validação e seguir. O agente reduz o custo de transformar intenção em código. Isso é poderoso.
 
 Também existe um risco real.
