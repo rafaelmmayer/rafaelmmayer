@@ -19,5 +19,14 @@ jobs:
       - rafaelmmayer
 
     steps:
-      - name: Deploy on homelab host
-        run: ssh -i ~/.ssh/id_ed25519_deploy -o IdentitiesOnly=yes -o BatchMode=yes mayer@10.88.0.1
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build image
+        run: sudo -n buildah bud --isolation chroot --format docker -t rafaelmmayer-site:local .
+
+      - name: Export image
+        run: sudo -n buildah push rafaelmmayer-site:local "docker-archive:${RUNNER_TEMP}/rafaelmmayer-site.tar:rafaelmmayer-site:local"
+
+      - name: Deploy image on homelab host
+        run: cat "${RUNNER_TEMP}/rafaelmmayer-site.tar" | ssh -i ~/.ssh/id_ed25519_deploy -o IdentitiesOnly=yes -o BatchMode=yes mayer@10.88.0.1
