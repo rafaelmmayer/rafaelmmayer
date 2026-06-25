@@ -15,7 +15,7 @@ Começar pelo mock foi uma decisão mais importante do que parecia.
 
 No [texto anterior](/artigos/hermes-web-gateway/uma-interface-para-operar-agentes/), falei da interface como bancada para operar agentes. Aqui a pergunta é outra: como pensar essa interface antes de ligar no Hermes real.
 
-O objetivo do Hermes Web Gateway é falar com o Hermes real. Mesmo assim, ligar direto no agente desde o primeiro dia teria deixado tudo mais confuso. Cada ajuste de interface dependeria de uma sessão real, de autenticação, de estado, de resposta do modelo, de tokens e de uma sequência difícil de repetir.
+O objetivo do Hermes Web Gateway é falar com o Hermes real. Mesmo assim, ligar direto no agente desde o primeiro dia teria deixado tudo mais confuso. Cada ajuste de interface viraria uma execução real com estado e autenticação no meio.
 
 Eu queria separar duas perguntas.
 
@@ -29,11 +29,11 @@ Se as duas perguntas aparecem juntas cedo demais, uma atrapalha a outra.
 
 Mock costuma soar como etapa provisória, quase descartável. Neste caso, ele virou ferramenta de pensamento.
 
-Ao simular sessões, mensagens, aprovações, diffs e imagens, eu consigo olhar para a interface sem depender do comportamento imprevisível de uma conversa real. Posso perguntar: uma aprovação fica clara desse jeito? Uma resposta longa é confortável de ler? Uma imagem anexada aparece onde deveria? Uma sessão vazia parece quebrada ou pronta?
+Com os estados importantes simulados, eu consigo olhar para a interface sem depender do comportamento imprevisível de uma execução real. Fica mais fácil avaliar se uma aprovação está clara ou se uma resposta longa é confortável.
 
 Essas perguntas são de design, não de integração.
 
-Quando o agente real está no meio, tudo fica mais barulhento. Se algo parece ruim, pode ser a UI, o backend, o modelo, a rede, a autenticação ou o prompt. Com mock, o problema fica mais isolado.
+Quando o agente real está no meio, tudo fica mais barulhento. Se algo parece ruim, a origem pode estar em muitos lugares. Com mock, o problema fica isolado.
 
 Isso dá liberdade.
 
@@ -41,23 +41,23 @@ Isso dá liberdade.
 
 Também tem uma questão de cuidado.
 
-O Bob está longe de ser uma API de demonstração. Ele tem memória, ferramentas, acesso a arquivos, terminal e histórico real. Usar o agente verdadeiro como massa de teste para cada estado visual parece errado. Eu não quero criar sessão real só para ver se um botão ficou alinhado. Não quero pedir uma aprovação sensível só para testar um card. Não quero gastar execução real para validar uma tabela.
+O Bob está longe de ser uma API de demonstração. Ele tem memória e acesso real ao ambiente. Usar o agente verdadeiro como massa de teste para cada estado visual parece errado. Eu não quero criar sessão real para ajustar botão, nem pedir aprovação sensível para testar card.
 
 Simular antes é uma forma de respeitar o ambiente.
 
-O Hermes real entra quando a interface já sabe o que quer. Aí o teste passa a ser outro: a ponte está correta? O estado é mapeado com fidelidade? A autorização chega no lugar certo? O histórico real aparece sem bagunça?
+O Hermes real entra quando a interface já sabe o que quer. Aí o teste passa a ser outro: a ponte está correta? O estado e a autorização chegam no lugar certo? O histórico real aparece sem bagunça?
 
 Essas são perguntas de integração. Elas merecem outro momento.
 
 ## Conectar muda o peso
 
-Enquanto tudo está no mock, a interface é um laboratório. Quando ela fala com o Bob de verdade, passa a encostar no meu ambiente real: sessões, histórico, ferramentas, permissões e ações que podem alterar arquivos ou serviços.
+Enquanto tudo está no mock, a interface é um laboratório. Quando ela fala com o Bob de verdade, passa a encostar em sessões e permissões reais. Também passa a poder disparar ações que alteram arquivos ou serviços.
 
 Essa virada exige cuidado.
 
-A tentação em projeto pessoal é fazer o caminho mais curto. Está na minha rede, eu confio na máquina, eu só quero usar logo. Mas esse tipo de atalho costuma envelhecer mal. Uma interface para agente operacional precisa nascer com alguma noção de fronteira, mesmo antes de virar serviço definitivo.
+A tentação em projeto pessoal é fazer o caminho mais curto. A justificativa aparece rápido: rede local e uso pessoal. Mas esse atalho costuma envelhecer mal. Uma interface para agente operacional precisa nascer com alguma noção de fronteira, mesmo antes de virar serviço definitivo.
 
-O Hermes real tem memória de trabalho. Existem sessões antigas, títulos, mensagens, decisões, aprovações e contexto. Isso é justamente o que torna o agente útil. Também é o que torna a interface mais sensível.
+O Hermes real tem memória de trabalho. Existem sessões antigas, decisões e contexto acumulado. Isso é justamente o que torna o agente útil. Também é o que torna a interface mais sensível.
 
 A partir desse momento, apagar uma sessão deixa de ser gesto visual. Responder uma aprovação deixa de ser teste. Ativar um modo mais permissivo deixa de ser estado de UI. Tudo passa a ter consequência fora da tela.
 
@@ -67,11 +67,11 @@ Essa é a diferença que eu quero que o gateway deixe clara.
 
 Eu não queria resolver integração desligando proteção.
 
-Em ambiente local, é fácil racionalizar: está atrás da VPN, está no homelab, sou só eu usando. Mas uma interface que conversa com um agente capaz de agir merece uma camada de respeito maior. Autenticação, autorização e escopo viram parte do cuidado quando a ferramenta tem poder de operação.
+Em ambiente local, é fácil racionalizar: está atrás da VPN e no homelab. Mas uma interface que conversa com um agente capaz de agir merece uma camada de respeito maior. Autenticação, autorização e escopo viram parte do cuidado quando a ferramenta tem poder de operação.
 
 A decisão de colocar um gateway entre navegador e Hermes vem daí.
 
-Ele funciona como uma fronteira mais controlada. A UI não precisa carregar todos os detalhes sensíveis. O backend pode cuidar da conversa com o dashboard do Hermes, preservar o caminho de autenticação e expor para o navegador uma superfície mais estreita.
+Ele funciona como uma fronteira mais controlada. A UI não precisa carregar todos os detalhes sensíveis. O backend conversa com o dashboard do Hermes e preserva a autenticação. Para o navegador, sobra uma superfície mais estreita.
 
 O objetivo é evitar que conveniência vire hábito ruim.
 

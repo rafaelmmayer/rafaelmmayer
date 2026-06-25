@@ -13,13 +13,13 @@ published: true
 
 Construir uma ferramenta para conversar com o Bob usando o próprio Bob é uma experiência curiosa.
 
-No [texto anterior](/artigos/hermes-web-gateway/permissao-e-controle/), falei da fronteira de permissão quando um agente pode agir. Este texto olha para outra fronteira: o momento em que uma ferramenta deixa de ser só protótipo e começa a ocupar lugar estável no homelab.
+No [texto anterior](/artigos/hermes-web-gateway/permissao-e-controle/), falei da fronteira de permissão quando um agente pode agir. Este texto olha para o momento em que uma ferramenta deixa de ser protótipo e começa a ocupar lugar estável no homelab.
 
-Existe uma produtividade real. Eu consigo pedir uma alteração, revisar um caminho, corrigir um erro, rodar validação e seguir. O agente reduz o custo de transformar intenção em código. Isso é poderoso.
+Existe uma produtividade real. Eu consigo pedir uma mudança, revisar o caminho e seguir depois da validação. O agente reduz o custo de transformar intenção em código. Isso é poderoso.
 
 Também existe um risco real.
 
-Quando a velocidade aumenta, fica mais fácil aceitar acúmulo. Um componente cresce demais. Uma decisão provisória fica. Um detalhe visual vira regra. Uma correção rápida puxa outra. O projeto continua andando, mas começa a depender de contexto que só existe na conversa do momento.
+Quando a velocidade aumenta, fica mais fácil aceitar acúmulo. Componentes crescem. Decisões provisórias ficam. Correções rápidas puxam outras. O projeto continua andando, mas passa a depender da conversa do momento.
 
 Eu não quero isso.
 
@@ -27,29 +27,29 @@ Eu não quero isso.
 
 O maior ganho de trabalhar com agente é sair da inércia.
 
-Aquela tarefa que eu adiaria porque envolve arquivos, boilerplate, ajuste fino e teste fica mais fácil de começar. O Bob ajuda a abrir caminho. Mas velocidade sem forma vira bagunça mais rápido do que no trabalho manual.
+Aquela tarefa que eu adiaria por envolver detalhe demais fica mais fácil de começar. O Bob ajuda a abrir caminho. Mas velocidade sem forma vira bagunça mais rápido do que no trabalho manual.
 
-Quando estou programando sozinho, meu limite natural me obriga a ir mais devagar. Com agente, esse freio some em parte. Então preciso colocar outros freios: revisão, validação, escopo, nome bom, separação de responsabilidade e coragem para refatorar cedo.
+Quando programo sozinho, meu limite natural me obriga a ir mais devagar. Com agente, esse freio some em parte. Então preciso de outros freios: revisão, escopo e bons nomes.
 
 O objetivo é manter o projeto compreensível.
 
-Para mim, código bom é código que uma próxima sessão consegue entender. Isso vale para humano e para agente. Se eu preciso de toda a conversa anterior para explicar por que algo existe, alguma coisa ficou mal documentada no próprio projeto. O código, os nomes e a estrutura precisam carregar parte da história.
+Para mim, código bom é código que uma próxima sessão consegue entender. Isso vale para humano e para agente. Se eu preciso da conversa anterior para explicar por que algo existe, a estrutura não carregou história suficiente.
 
 ## O agente ajuda mais quando o projeto é legível
 
 Existe um ciclo interessante aqui.
 
-Quanto mais legível o projeto, melhor o Bob consegue ajudar. Quanto melhor ele ajuda, mais rápido o projeto cresce. Quanto mais rápido cresce, mais necessário fica preservar legibilidade.
+Projeto legível ajuda o Bob. Essa ajuda acelera o projeto. Quanto mais rápido o projeto cresce, mais importante fica preservar legibilidade.
 
 O agente não elimina arquitetura. Ele torna arquitetura mais importante.
 
-Se a estrutura está confusa, o Bob consegue mexer mesmo assim, mas a chance de mudança lateral aumenta. Ele altera mais do que precisa, carrega suposição errada, conserta sintoma. Quando a estrutura está clara, o pedido pode ser menor e a revisão fica mais fácil.
+Com estrutura confusa, o Bob consegue mexer mesmo assim, mas a chance de mudança lateral aumenta. Ele pode alterar demais ou partir de suposição errada. Com estrutura clara, o pedido fica menor e a revisão fica mais fácil.
 
 Trabalhar com agente me deixa mais sensível a isso. Um arquivo gigante atrapalha minha leitura e também vira uma superfície ruim para delegar.
 
 ## Protótipo útil ainda é experimento
 
-O Hermes Web Gateway já é útil como protótipo. Ele abre, conversa, simula estados, conecta no Hermes real e mostra o tipo de interface que eu quero. Mas uma coisa é um app que roda durante o desenvolvimento. Outra é um serviço que mora no homelab e passa a fazer parte do meu dia.
+O Hermes Web Gateway já é útil como protótipo. Ele mostra o tipo de interface que eu quero e já conversa com o Hermes real. Mas uma coisa é um app que roda durante o desenvolvimento. Outra é um serviço que mora no homelab e passa a fazer parte do meu dia.
 
 Essa passagem muda a responsabilidade.
 
@@ -57,17 +57,17 @@ Um protótipo pode ser frágil. Um serviço pessoal também pode ser simples, ma
 
 No homelab, gosto que cada coisa tenha lugar.
 
-Um serviço precisa de nome, rota, pasta, configuração, logs e uma forma clara de subir de novo. Isso parece burocracia até o dia em que algo quebra. Aí o que parecia excesso vira mapa.
+Um serviço precisa de nome, configuração, logs e uma forma clara de subir de novo. Isso parece burocracia até o dia em que algo quebra. Aí o que parecia excesso vira mapa.
 
 ## Serviço tem memória material
 
 Configuração também é memória.
 
-Um arquivo com URL, modo de conexão, credencial ou preferência parece detalhe técnico. Mas ele define como a ferramenta se comporta. Se eu perder, preciso conseguir recriar. Se vazar, preciso entender o impacto. Se mudar, preciso saber por quê.
+Um arquivo com credencial ou URL parece detalhe técnico. Mas ele define como a ferramenta se comporta. Se eu perder, preciso conseguir recriar. Se vazar, preciso entender o impacto. Se mudar, preciso saber o motivo.
 
 Por isso um serviço do homelab precisa entrar na política de backup de forma proporcional.
 
-Nem tudo merece banco, replicação ou ritual pesado. Mas tudo que sustenta uso real merece uma resposta simples para três perguntas: onde está, como restaura, o que acontece se vazar?
+Nem tudo merece banco ou ritual pesado. Mas tudo que sustenta uso real merece uma resposta simples: onde está, como restaura e qual o impacto se vazar?
 
 Essa disciplina evita que o homelab vire uma coleção de coisas que funcionam só enquanto ninguém encosta.
 
@@ -75,11 +75,11 @@ Essa disciplina evita que o homelab vire uma coleção de coisas que funcionam s
 
 A parte mais sensível é acesso.
 
-O gateway é uma interface para falar com um agente que pode operar ferramentas. Isso muda a natureza da tela. Mesmo que ela pareça só um chat, por trás existe capacidade de executar comandos, alterar arquivos, responder aprovações e mudar modos de permissão.
+O gateway é uma interface para falar com um agente que pode operar ferramentas. Isso muda a natureza da tela. Mesmo que ela pareça só um chat, por trás existe capacidade de executar comandos e mudar arquivos ou permissões.
 
 Eu não quero tratar isso como painel qualquer.
 
-A fronteira precisa ser pensada antes de virar hábito. Acesso local, VPN, autenticação da própria interface, relação com o dashboard do Hermes, risco de YOLO global, exposição pública. Cada decisão muda o tipo de confiança que posso ter no serviço.
+A fronteira precisa ser pensada antes de virar hábito. Preciso decidir como entro, quem autentica e qual risco aceito para a interface. Cada decisão muda o tipo de confiança que posso ter no serviço.
 
 O caminho conservador combina mais com o que quero: uma ferramenta interna, próxima, útil e protegida.
 
@@ -87,7 +87,7 @@ O caminho conservador combina mais com o que quero: uma ferramenta interna, pró
 
 Para mim, o protótipo vira serviço quando deixa de depender da minha lembrança imediata.
 
-Eu consigo subir de novo. Sei onde está a configuração. Sei qual nome abrir. Sei como validar. Sei o que está protegido. Sei o que entra no backup. Sei qual parte ainda é experimental.
+Eu consigo subir de novo. Sei onde está a configuração, como validar e o que ainda é experimental.
 
 Antes disso, ele pode ser útil, mas continua no território do experimento.
 
