@@ -11,9 +11,9 @@ steps:
       - /var/run/docker.sock:/var/run/docker.sock
       - /home/actions/.docker/config.json:/root/.docker/config.json:ro
     commands:
-      - docker build --pull --tag registry.home.arpa:5000/rafaelmmayer-site:${CI_COMMIT_SHA} --tag registry.home.arpa:5000/rafaelmmayer-site:main .
-      - docker push registry.home.arpa:5000/rafaelmmayer-site:${CI_COMMIT_SHA}
-      - docker push registry.home.arpa:5000/rafaelmmayer-site:main
+      - docker build --pull --tag registry.mayerlab.dev/rafaelmmayer-site:${CI_COMMIT_SHA} --tag registry.mayerlab.dev/rafaelmmayer-site:main .
+      - docker push registry.mayerlab.dev/rafaelmmayer-site:${CI_COMMIT_SHA}
+      - docker push registry.mayerlab.dev/rafaelmmayer-site:main
 
   - name: deploy
     image: alpine:3.22
@@ -30,7 +30,7 @@ steps:
       - |
         ssh -T -i ~/.ssh/id_ed25519_deploy -o IdentitiesOnly=yes -o BatchMode=yes mayer@10.88.0.1 <<'DEPLOY'
         cd /home/mayer/homelab/rafaelmmayer
-        docker pull registry.home.arpa:5000/rafaelmmayer-site:main
+        docker pull registry.mayerlab.dev/rafaelmmayer-site:main
         docker compose up -d --no-build --remove-orphans
         docker compose ps
         DEPLOY
